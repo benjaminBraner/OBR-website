@@ -177,12 +177,12 @@ ul, ol {
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-  box-shadow: 0 4px 20px rgba(230, 81, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 91, 159, 0.2);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(230, 81, 0, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 91, 159, 0.35);
   color: #fff;
 }
 
@@ -204,7 +204,7 @@ ul, ol {
 .btn-outline:hover {
   border-color: var(--color-primary);
   color: var(--color-primary-light);
-  background: rgba(230, 81, 0, 0.05);
+  background: rgba(0, 91, 159, 0.05);
 }
 
 /* ─── Section Label ─── */

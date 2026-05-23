@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -382,6 +382,14 @@ function Lightbox({ project, onClose }) {
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('Todos');
   const [lightboxProject, setLightboxProject] = useState(null);
+
+  useEffect(() => {
+    const handleFilter = (e) => {
+      setActiveCategory(e.detail);
+    };
+    window.addEventListener('filterProjects', handleFilter);
+    return () => window.removeEventListener('filterProjects', handleFilter);
+  }, []);
 
   const filtered = activeCategory === 'Todos'
     ? projects

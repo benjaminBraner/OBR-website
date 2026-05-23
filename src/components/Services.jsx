@@ -29,7 +29,7 @@ const services = [
     icon: <Waves size={32} strokeWidth={1.4} />,
     title: 'Áreas Sociales & Piscinas',
     desc: 'Piscinas, clubhouses y espacios de esparcimiento que elevan el valor y distinción de cada desarrollo.',
-    tag: 'Social',
+    tag: 'Áreas Sociales',
   },
   {
     icon: <Building2 size={32} strokeWidth={1.4} />,
@@ -258,17 +258,18 @@ export default function Services() {
                 {service.desc}
               </p>
 
-              <div style={{
-                display: 'flex',
+              <a href="#projects" onClick={() => window.dispatchEvent(new CustomEvent('filterProjects', { detail: service.tag }))} style={{
+                display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.4rem',
                 color: 'var(--color-primary)',
                 fontSize: '0.85rem',
                 fontWeight: 600,
                 marginTop: '0.25rem',
+                textDecoration: 'none',
               }}>
                 Ver proyectos <ArrowUpRight size={13} />
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>
