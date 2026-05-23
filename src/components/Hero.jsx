@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
 import heroBg from '../assets/EDIFICIO KUBOO TOBOROCHI/Fachada Frontal Nocturna.jpg';
@@ -13,9 +13,13 @@ const stats = [
 export default function Hero() {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start start', 'end start'] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
-  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '15%']);
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  
+  // Añadido useSpring para suavizar la animación y eliminar el lag
+  const smoothScroll = useSpring(scrollYProgress, { damping: 25, stiffness: 120, mass: 0.5 });
+  
+  const bgY = useTransform(smoothScroll, [0, 1], ['0%', '30%']);
+  const textY = useTransform(smoothScroll, [0, 1], ['0%', '15%']);
+  const opacity = useTransform(smoothScroll, [0, 0.7], [1, 0]);
 
   return (
     <section
@@ -35,6 +39,7 @@ export default function Hero() {
           inset: '-10% 0',
           zIndex: 0,
           y: bgY,
+          willChange: 'transform',
         }}
       >
         <img
@@ -60,6 +65,7 @@ export default function Hero() {
               var(--color-bg) 100%
             )
           `,
+          willChange: 'transform',
         }} />
       </motion.div>
 
@@ -103,11 +109,12 @@ export default function Hero() {
           transformOrigin: 'top',
           zIndex: 1,
           opacity: 0.5,
+          willChange: 'transform',
         }}
       />
 
       <motion.div
-        style={{ y: textY, opacity, position: 'relative', zIndex: 1 }}
+        style={{ y: textY, opacity, position: 'relative', zIndex: 1, willChange: 'transform, opacity' }}
         className="container"
       >
         <div style={{ position: 'relative', zIndex: 1, paddingTop: '7rem', paddingBottom: '5rem', maxWidth: '820px' }}>
