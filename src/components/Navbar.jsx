@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import logoSVG from '../assets/logo-obr.png';
 
 const navLinks = [
   { label: 'Nosotros', href: '#about' },
@@ -47,13 +48,8 @@ export default function Navbar() {
       >
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Logo */}
-          <a href="#" style={{
-            fontSize: '1.6rem',
-            fontWeight: 800,
-            fontFamily: 'var(--font-heading)',
-            letterSpacing: '3px',
-          }}>
-            O<span className="gradient-text-primary">B</span>R
+          <a href="#" style={{ display: 'flex', alignItems: 'center' }}>
+            <img src={logoSVG} alt="OBR Construcción" style={{ height: '36px', width: 'auto' }} />
           </a>
 
           {/* Desktop Navigation */}

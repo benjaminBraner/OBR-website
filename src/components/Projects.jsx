@@ -119,10 +119,8 @@ import ciudadJardin6 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin
 import ciudadJardin7 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-7.jpeg';
 import ciudadJardinConstruccion1 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-1.png';
 import ciudadJardinConstruccion2 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-2.png';
-import ciudadJardinConstruccion3Jpeg from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-3.jpeg';
-import ciudadJardinConstruccion3Png from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-3.png';
-import ciudadJardinConstruccion4Jpeg from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-4.jpeg';
-import ciudadJardinConstruccion4Png from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-4.png';
+import ciudadJardinConstruccion3 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-3.png';
+import ciudadJardinConstruccion4 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-4.png';
 import ciudadJardinConstruccion5 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-5.png';
 import ciudadJardinConstruccion6 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-6.jpeg';
 
@@ -210,13 +208,13 @@ const CATEGORIES = [
   'Comercial',
   'Áreas Sociales',
   'Industrial',
-  'Pavimentos',
 ];
 
 /* ─── Project Data ─── */
 const projects = [
   {
     id: 1,
+    status: 'terminado',
     title: 'Edificio Kuboo Toborochi',
     category: 'Comercial',
     image: kubooFrontal1,
@@ -253,6 +251,7 @@ const projects = [
   },
   {
     id: 2,
+    status: 'terminado',
     title: 'Showroom KTM',
     category: 'Comercial',
     image: ktmFrontal1,
@@ -266,6 +265,7 @@ const projects = [
   },
   {
     id: 3,
+    status: 'terminado',
     title: 'Stand Honda',
     category: 'Comercial',
     image: hondaFrontal4,
@@ -279,6 +279,7 @@ const projects = [
   },
   {
     id: 4,
+    status: 'en_desarrollo',
     title: 'La Fontana',
     category: 'Áreas Sociales',
     image: fontanaPiscina1,
@@ -294,6 +295,7 @@ const projects = [
   },
   {
     id: 5,
+    status: 'terminado',
     title: 'Vivienda Ferrufino',
     category: 'Residencial',
     image: ferrufinoPiscina4,
@@ -315,6 +317,7 @@ const projects = [
   },
   {
     id: 6,
+    status: 'terminado',
     title: 'Vivienda Salvatierra',
     category: 'Residencial',
     image: salvatierraFrontal1,
@@ -341,6 +344,7 @@ const projects = [
   },
   {
     id: 7,
+    status: 'en_desarrollo',
     title: 'Vivienda Aracely Salvatierra',
     category: 'Residencial',
     image: aracelySalvatierraFrontal1,
@@ -352,6 +356,7 @@ const projects = [
   },
   {
     id: 8,
+    status: 'en_desarrollo',
     title: 'Vivienda Fernanda Cabrera',
     category: 'Residencial',
     image: fernandaCabreraFrontal1,
@@ -364,6 +369,7 @@ const projects = [
   },
   {
     id: 9,
+    status: 'en_desarrollo',
     title: 'Piscina Ciudad Jardín',
     category: 'Áreas Sociales',
     image: ciudadJardin3,
@@ -377,10 +383,8 @@ const projects = [
       // ciudadJardin7,
       ciudadJardinConstruccion1,
       ciudadJardinConstruccion2,
-      ciudadJardinConstruccion3Jpeg,
-      ciudadJardinConstruccion3Png,
-      ciudadJardinConstruccion4Jpeg,
-      ciudadJardinConstruccion4Png,
+      ciudadJardinConstruccion3,
+      ciudadJardinConstruccion4,
       ciudadJardinConstruccion5,
       ciudadJardinConstruccion6
     ],
@@ -388,6 +392,7 @@ const projects = [
   },
   {
     id: 10,
+    status: 'terminado',
     title: 'Piscina Emilene',
     category: 'Áreas Sociales',
     image: piscinaEmilene1,
@@ -400,6 +405,7 @@ const projects = [
   },
   {
     id: 11,
+    status: 'en_desarrollo',
     title: 'Piscina Urb. El Duende',
     category: 'Áreas Sociales',
     image: elDuende1,
@@ -415,6 +421,7 @@ const projects = [
   },
   {
     id: 12,
+    status: 'terminado',
     title: 'Lomas de Arena',
     category: 'Residencial',
     image: lomasArenaFrontal1,
@@ -429,6 +436,7 @@ const projects = [
   },
   {
     id: 13,
+    status: 'terminado',
     title: 'Remodelación Las Palmas',
     category: 'Residencial',
     image: lasPalmasFrontal1,
@@ -447,6 +455,7 @@ const projects = [
   },
   {
     id: 14,
+    status: 'terminado',
     title: 'Galpón Autobol 3',
     category: 'Industrial',
     image: autobolFrontal1,
@@ -460,6 +469,7 @@ const projects = [
   },
   {
     id: 15,
+    status: 'terminado',
     title: 'Galpón Autobol 4',
     category: 'Industrial',
     image: autobol4Frontal1,
@@ -472,6 +482,7 @@ const projects = [
   },
   {
     id: 16,
+    status: 'terminado',
     title: 'Galpón Autobol Center 1',
     category: 'Industrial',
     image: autobolCenter1Frontal1,
@@ -482,6 +493,7 @@ const projects = [
   },
   {
     id: 17,
+    status: 'terminado',
     title: 'Galpón Autobol Center 2',
     category: 'Industrial',
     image: autobolCenter2Frontal1,
@@ -494,6 +506,7 @@ const projects = [
   },
   {
     id: 18,
+    status: 'terminado',
     title: 'Galpón Honda',
     category: 'Industrial',
     image: galponHondaFrontal1,
@@ -514,6 +527,7 @@ const projects = [
   },
   {
     id: 19,
+    status: 'terminado',
     title: 'Galpón Visal 2024',
     category: 'Industrial',
     image: visalFrontal1,
@@ -527,8 +541,9 @@ const projects = [
   },
   {
     id: 20,
+    status: 'terminado',
     title: 'Pavimento Honda',
-    category: 'Pavimentos',
+    category: 'Industrial',
     image: pavimentoHonda1,
     gallery: [
       pavimentoHonda1,
@@ -716,6 +731,115 @@ export default function Projects() {
     ? projects
     : projects.filter(p => p.category === activeCategory);
 
+  const enDesarrollo = filtered.filter(p => p.status === 'en_desarrollo');
+  const terminados = filtered.filter(p => p.status === 'terminado');
+
+  const renderProject = (project) => (
+    <motion.div
+      key={project.id}
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.4 }}
+      onClick={() => setLightboxProject(project)}
+      style={{
+        borderRadius: 'var(--radius-lg)',
+        overflow: 'hidden',
+        cursor: 'pointer',
+        position: 'relative',
+        border: '1px solid var(--color-border)',
+        background: 'var(--color-surface-2)',
+      }}
+      onMouseOver={(e) => {
+        const img = e.currentTarget.querySelector('.project-img');
+        const overlay = e.currentTarget.querySelector('.project-overlay');
+        if (img) img.style.transform = 'scale(1.08)';
+        if (overlay) overlay.style.opacity = '1';
+      }}
+      onMouseOut={(e) => {
+        const img = e.currentTarget.querySelector('.project-img');
+        const overlay = e.currentTarget.querySelector('.project-overlay');
+        if (img) img.style.transform = 'scale(1)';
+        if (overlay) overlay.style.opacity = '0';
+      }}
+    >
+      <div style={{ height: '280px', overflow: 'hidden' }}>
+        <img
+          className="project-img"
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+          }}
+        />
+      </div>
+
+      {/* Overlay */}
+      <div
+        className="project-overlay"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to top, rgba(255, 255, 255,0.95) 0%, rgba(255, 255, 255,0.4) 50%, rgba(255, 255, 255,0) 100%)',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
+          padding: '2rem',
+          opacity: 0,
+          transition: 'opacity 0.4s ease',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+          <span style={{
+            color: 'var(--color-primary)',
+            fontSize: '0.75rem',
+            fontWeight: 700,
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
+          }}>
+            {project.category}
+          </span>
+          {project.status === 'en_desarrollo' && (
+            <span style={{
+              background: 'var(--color-primary)',
+              color: '#fff',
+              fontSize: '0.65rem',
+              fontWeight: 700,
+              padding: '0.2rem 0.6rem',
+              borderRadius: '100px',
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+            }}>
+              En Desarrollo
+            </span>
+          )}
+        </div>
+        <h3 style={{ fontSize: '1.4rem', color: '#000', marginBottom: '0.5rem' }}>
+          {project.title}
+        </h3>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+          {project.desc}
+        </p>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          color: 'var(--color-primary-light)',
+          fontSize: '0.85rem',
+          fontWeight: 600,
+          marginTop: '1rem',
+        }}>
+          Ver galería <ArrowUpRight size={14} />
+        </div>
+      </div>
+    </motion.div>
+  );
+
   return (
     <>
       <section id="projects" className="section" style={{ background: 'var(--color-surface)' }}>
@@ -770,108 +894,52 @@ export default function Projects() {
             ))}
           </div>
 
-          {/* Project Grid */}
-          <motion.div
-            layout
-            className="projects-grid"
-            style={{
-              display: 'grid',
-              gap: '1.5rem',
-            }}
-          >
-            <AnimatePresence mode="popLayout">
-              {filtered.map((project) => (
-                <motion.div
-                  key={project.id}
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.4 }}
-                  onClick={() => setLightboxProject(project)}
-                  style={{
-                    borderRadius: 'var(--radius-lg)',
-                    overflow: 'hidden',
-                    cursor: 'pointer',
-                    position: 'relative',
-                    border: '1px solid var(--color-border)',
-                    background: 'var(--color-surface-2)',
-                  }}
-                  onMouseOver={(e) => {
-                    const img = e.currentTarget.querySelector('.project-img');
-                    const overlay = e.currentTarget.querySelector('.project-overlay');
-                    if (img) img.style.transform = 'scale(1.08)';
-                    if (overlay) overlay.style.opacity = '1';
-                  }}
-                  onMouseOut={(e) => {
-                    const img = e.currentTarget.querySelector('.project-img');
-                    const overlay = e.currentTarget.querySelector('.project-overlay');
-                    if (img) img.style.transform = 'scale(1)';
-                    if (overlay) overlay.style.opacity = '0';
-                  }}
-                >
-                  <div style={{ height: '280px', overflow: 'hidden' }}>
-                    <img
-                      className="project-img"
-                      src={project.image}
-                      alt={project.title}
-                      loading="lazy"
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-                      }}
-                    />
-                  </div>
-
-                  {/* Overlay */}
-                  <div
-                    className="project-overlay"
-                    style={{
-                      position: 'absolute',
-                      inset: 0,
-                      background: 'linear-gradient(to top, rgba(255, 255, 255,0.95) 0%, rgba(255, 255, 255,0.4) 50%, rgba(255, 255, 255,0) 100%)',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'flex-end',
-                      padding: '2rem',
-                      opacity: 0,
-                      transition: 'opacity 0.4s ease',
-                    }}
-                  >
-                    <span style={{
-                      color: 'var(--color-primary)',
-                      fontSize: '0.75rem',
-                      fontWeight: 700,
-                      letterSpacing: '2px',
-                      textTransform: 'uppercase',
-                      marginBottom: '0.5rem',
-                    }}>
-                      {project.category}
-                    </span>
-                    <h3 style={{ fontSize: '1.4rem', color: '#000', marginBottom: '0.5rem' }}>
-                      {project.title}
-                    </h3>
-                    <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
-                      {project.desc}
-                    </p>
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
-                      color: 'var(--color-primary-light)',
-                      fontSize: '0.85rem',
-                      fontWeight: 600,
-                      marginTop: '1rem',
-                    }}>
-                      Ver galería <ArrowUpRight size={14} />
-                    </div>
-                  </div>
+          {/* Project Sections */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
+            {terminados.length > 0 && (
+              <div>
+                <h3 style={{ 
+                  fontSize: '1.6rem', 
+                  marginBottom: '1.5rem', 
+                  fontFamily: 'var(--font-heading)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  color: 'var(--color-text-main)'
+                }}>
+                  <div style={{ width: '8px', height: '24px', background: 'var(--color-text-muted)', borderRadius: '4px' }} />
+                  Proyectos Terminados
+                </h3>
+                <motion.div layout className="projects-grid" style={{ display: 'grid', gap: '1.5rem' }}>
+                  <AnimatePresence mode="popLayout">
+                    {terminados.map(renderProject)}
+                  </AnimatePresence>
                 </motion.div>
-              ))}
-            </AnimatePresence>
-          </motion.div>
+              </div>
+            )}
+            
+             {enDesarrollo.length > 0 && (
+              <div>
+                <h3 style={{ 
+                  fontSize: '1.6rem', 
+                  marginBottom: '1.5rem', 
+                  fontFamily: 'var(--font-heading)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  color: 'var(--color-text-main)'
+                }}>
+                  <div style={{ width: '8px', height: '24px', background: 'var(--color-primary)', borderRadius: '4px' }} />
+                  Proyectos en Desarrollo
+                </h3>
+                <motion.div layout className="projects-grid" style={{ display: 'grid', gap: '1.5rem' }}>
+                  <AnimatePresence mode="popLayout">
+                    {enDesarrollo.map(renderProject)}
+                  </AnimatePresence>
+                </motion.div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Globe, ArrowUpRight } from 'lucide-react';
+import logoSVG from '../assets/logo-obr.png';
 
 export default function Footer() {
   return (
@@ -55,14 +56,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <a href="#" style={{
-              fontSize: '2rem',
-              fontWeight: 800,
-              fontFamily: 'var(--font-heading)',
-              letterSpacing: '3px',
               display: 'inline-block',
               marginBottom: '1.25rem',
             }}>
-              O<span className="gradient-text-primary">B</span>R
+              <img src={logoSVG} alt="OBR Construcción" style={{ height: '42px', width: 'auto' }} />
             </a>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, fontSize: '0.95rem' }}>
               Innovación y calidad superior en cada proyecto de construcción.
