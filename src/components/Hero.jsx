@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
-import heroBg from '../assets/EDIFICIO KUBOO TOBOROCHI/Fachada Frontal Nocturna.jpg';
+import heroBg from '../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-frontal-14_cleanup.jpeg';
 
 const stats = [
   { value: '15+', label: 'Años de experiencia' },

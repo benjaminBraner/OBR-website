@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Target, Eye, Shield, CheckCircle2 } from 'lucide-react';
-import aboutImg from '../assets/EDIFICIO KUBOO TOBOROCHI/Fachada Frontal 1.jpg';
+import aboutImg from '../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-frontal-14_cleanup.jpeg';
 
 const features = [
   'Gestión integral de proyectos',
