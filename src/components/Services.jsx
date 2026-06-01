@@ -47,7 +47,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="section bg-grid" style={{ position: 'relative' }}>
+    <section id="services" className="section" style={{ position: 'relative' }}>
 
       {/* Glow */}
       <div className="glow-orb" style={{
