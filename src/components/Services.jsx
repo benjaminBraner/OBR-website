@@ -73,7 +73,7 @@ export default function Services({ featuredRef }) {
             backgroundColor: '#000000',
             color: '#ffffff',
             padding: '4rem 2rem',
-            borderRadius: 'var(--radius-xl)',
+            borderRadius: '2.5rem',
           }}
         >
           {/* <div className="section-label" style={{ justifyContent: 'center' }}>Qué Hacemos</div> */}

@@ -38,18 +38,48 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 100,
-          padding: scrolled ? '0.75rem 0' : '1.25rem 0',
-          background: scrolled ? 'rgba(255, 255, 255, 0.85)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(20px) saturate(1.2)' : 'none',
-          WebkitBackdropFilter: scrolled ? 'blur(20px) saturate(1.2)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(0, 0, 0,0.04)' : '1px solid transparent',
-          transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+          padding: scrolled ? '0.75rem 1.25rem' : '0',
+          transition: 'padding 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+          pointerEvents: 'none',
         }}
       >
-        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{
+          width: '100%',
+          maxWidth: scrolled ? '1250px' : '100%',
+          margin: '0 auto',
+          background: scrolled ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
+          backdropFilter: scrolled ? 'blur(20px)' : 'none',
+          WebkitBackdropFilter: scrolled ? 'blur(20px)' : 'none',
+          borderRadius: scrolled ? '100px' : '0',
+          borderBottom: (!scrolled) ? '1px solid rgba(0, 0, 0,0.04)' : '1px solid transparent',
+          boxShadow: scrolled ? '0 10px 40px rgba(0,0,0,0.08)' : 'none',
+          transition: 'all 0.4s ease',
+          pointerEvents: 'auto',
+          '--nav-hover-color': 'var(--color-accent)',
+        }}>
+          <div className="container" style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center',
+            padding: scrolled ? '0.5rem 1rem' : '1.25rem 2rem',
+            transition: 'padding 0.4s ease',
+            width: '100%',
+            maxWidth: '1240px',
+            margin: '0 auto'
+          }}>
           {/* Logo */}
-          <a href="#" style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={logoSVG} alt="OBR Construcción" style={{ height: '36px', width: 'auto' }} />
+          <a href="#" style={{ 
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            height: scrolled ? '42px' : 'auto',
+            background: 'transparent',
+            borderRadius: '50%',
+            transition: 'all 0.4s ease'
+          }}>
+            <img src={logoSVG} alt="OBR Construcción" style={{ 
+              height: scrolled ? '28px' : '36px', 
+              width: 'auto',
+              transition: 'all 0.4s ease',
+            }} />
           </a>
 
           {/* Desktop Navigation */}
@@ -57,15 +87,28 @@ export default function Navbar() {
             {navLinks.map(link => (
               <a key={link.href} href={link.href} className="nav-link-hover" style={{
                 fontSize: '0.9rem',
-                color: 'var(--color-text-muted)',
+                color: scrolled ? 'var(--color-text-main)' : 'var(--color-text-muted)',
                 fontWeight: 500,
                 position: 'relative',
                 padding: '0.25rem 0',
+                transition: 'color 0.3s ease'
               }}>
                 {link.label}
               </a>
             ))}
-            <a href="#contact" className="btn-primary" style={{ padding: '0.6rem 1.4rem', fontSize: '0.85rem' }}>
+            <a href="#contact" style={{ 
+              background: 'var(--color-primary)',
+              color: '#ffffff',
+              padding: scrolled ? '0.65rem 1.4rem' : '0.6rem 1.4rem', 
+              fontSize: '0.85rem',
+              borderRadius: '100px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              fontWeight: 600,
+              transition: 'all 0.3s ease',
+              textDecoration: 'none'
+            }}>
               Contáctanos <ArrowRight size={14} />
             </a>
           </div>
@@ -75,12 +118,17 @@ export default function Navbar() {
             className="mobile-nav-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
-            style={{ color: 'var(--color-text-main)', padding: '0.5rem' }}
+            style={{ 
+              color: 'var(--color-text-main)', 
+              padding: '0.5rem',
+              transition: 'color 0.3s ease'
+            }}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-      </motion.nav>
+      </div>
+    </motion.nav>
 
       {/* Mobile Overlay */}
       <AnimatePresence>
