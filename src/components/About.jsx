@@ -6,7 +6,7 @@ const features = [
   'Gestión integral de proyectos',
   'Acabados de lujo',
   'Ingeniería de vanguardia',
-  'Arquitectura minimalista',
+  'Arquitectura contemporánea y versátil',
 ];
 
 const cards = [
@@ -60,10 +60,11 @@ export default function About() {
               <span className="gradient-text-primary">tu socio estratégico.</span>
             </h2>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.05rem', lineHeight: 1.8, marginBottom: '2rem' }}>
-              Fusionamos diseño minimalista con ingeniería de vanguardia. 
-              Nuestro enfoque principal se centra en crear espacios que no solo cumplen 
-              una función estructural, sino que inspiran, elevan el estándar de vida y 
-              transforman comunidades enteras.
+              Fusionamos ingeniería de vanguardia con un diseño arquitectónico altamente versátil. 
+              Nos adaptamos a las tendencias actuales y a la visión de cada cliente, dominando estilos 
+              que van desde líneas contemporáneas y modernas, hasta arquitectura atemporal, clásica, 
+              neocolonial o brutalista. Creamos espacios que no solo cumplen una función estructural, 
+              sino que inspiran y elevan el estándar de vida.
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2.5rem' }}>

@@ -340,7 +340,7 @@ const projects = [
       salvatierraInterior13,
       salvatierraInterior14
     ],
-    desc: 'Residencia elegante con arquitectura minimalista y funcional.',
+    desc: 'Residencia elegante que combina diseño contemporáneo con alta funcionalidad.',
   },
   {
     id: 7,
