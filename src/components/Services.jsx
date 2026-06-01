@@ -52,7 +52,7 @@ export default function Services() {
       {/* Glow */}
       <div className="glow-orb" style={{
         width: '600px', height: '600px',
-        background: 'radial-gradient(circle, rgba(0, 91, 159, 0.07) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(94, 25, 20, 0.07) 0%, transparent 70%)',
         top: '20%', right: '-20%',
       }} />
 

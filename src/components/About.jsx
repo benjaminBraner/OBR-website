@@ -187,7 +187,7 @@ export default function About() {
                 position: 'absolute',
                 top: '-10%', right: '-10%',
                 width: '150px', height: '150px',
-                background: 'radial-gradient(circle, rgba(0, 91, 159, 0.05) 0%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(94, 25, 20, 0.05) 0%, transparent 70%)',
                 zIndex: 0,
               }} />
               

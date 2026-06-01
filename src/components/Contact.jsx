@@ -44,12 +44,12 @@ export default function Contact() {
       {/* Glow orbs */}
       <div className="glow-orb" style={{
         width: '600px', height: '600px',
-        background: 'radial-gradient(circle, rgba(0, 91, 159, 0.07) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(94, 25, 20, 0.07) 0%, transparent 70%)',
         top: '-10%', right: '-20%',
       }} />
       <div className="glow-orb" style={{
         width: '400px', height: '400px',
-        background: 'radial-gradient(circle, rgba(0, 91, 159, 0.05) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(94, 25, 20, 0.05) 0%, transparent 70%)',
         bottom: '0%', left: '-10%',
       }} />
 

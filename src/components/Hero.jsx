@@ -2,13 +2,9 @@ import { useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
-import heroBg from '../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-frontal-14_cleanup.jpeg';
+import heroBg from '../assets/EDIFICIO KUBOO TOBOROCHI/kubo-prueba-bw.jpg';
 
-const stats = [
-  { value: '15+', label: 'Años de experiencia' },
-  { value: '50+', label: 'Proyectos completados' },
-  { value: '100%', label: 'Clientes satisfechos' },
-];
+
 
 export default function Hero() {
   const sectionRef = useRef(null);
@@ -49,8 +45,8 @@ export default function Hero() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            opacity: 0.70,
-            filter: 'blur(3px) saturate(0.8)',
+            opacity: 0.96,
+            filter: 'blur(1px) saturate(0.8)',
           }}
         />
         {/* Multi-layer gradient overlay */}
@@ -81,18 +77,18 @@ export default function Hero() {
         }}
       />
       <motion.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.8, 0.4] }}
+        animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
         transition={{ repeat: Infinity, duration: 8, ease: 'easeInOut', delay: 2 }}
         className="glow-orb"
         style={{
           width: '500px', height: '500px',
-          background: 'radial-gradient(circle, rgba(0, 91, 159, 0.07) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(94, 25, 20, 0.08) 0%, transparent 70%)',
           bottom: '5%', right: '-10%',
         }}
       />
 
       {/* Grid pattern */}
-      <div className="bg-grid" style={{ position: 'absolute', inset: 0, zIndex: 0 }} />
+      {/* <div className="bg-grid" style={{ position: 'absolute', inset: 0, zIndex: 0 }} /> */}
 
       {/* Animated accent line */}
       <motion.div
@@ -134,16 +130,17 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             style={{
-              fontSize: 'clamp(3rem, 9vw, 6rem)',
-              marginBottom: '1.75rem',
-              lineHeight: 1.02,
-              letterSpacing: '-0.03em',
+              fontSize: 'clamp(3rem, 9vw, 6.5rem)',
+              marginBottom: '1.5rem',
+              lineHeight: 1.0,
+              letterSpacing: '-0.04em',
+              fontWeight: 700,
             }}
           >
-            Construimos el{' '}
+            Arquitectura y{' '}
             <br />
-            <span className="gradient-text-primary">futuro</span>{' '}
-            que imaginas
+            <span style={{ color: 'var(--color-primary)' }}>diseño</span>{' '}
+            de vanguardia
           </motion.h1>
 
           {/* Subheading */}
@@ -159,9 +156,8 @@ export default function Hero() {
               lineHeight: 1.8,
             }}
           >
-            Elegancia, minimalismo y calidad superior en cada proyecto.
-            Desde tu estudio de mercado hasta viviendas de lujo,
-            showrooms corporativos y desarrollos urbanísticos de alto impacto.
+            Calidad superior en cada espacio.
+Transformamos proyectos corporativos y residenciales en realidades de lujo.
           </motion.p>
 
           {/* CTA buttons */}
@@ -179,48 +175,7 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Stats bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className="hero-stats-container"
-            style={{
-              display: 'flex',
-              marginTop: '5.5rem',
-              paddingTop: '2.5rem',
-              borderTop: '1px solid var(--color-border)',
-            }}
-          >
-            {stats.map((stat, i) => (
-              <motion.div
-                key={i}
-                className="hero-stat-item"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.7 + i * 0.1 }}
-                style={{
-                  flex: '1',
-                }}
-              >
-                <div
-                  className="gradient-text-primary"
-                  style={{
-                    fontSize: '2.4rem',
-                    fontWeight: 800,
-                    fontFamily: 'var(--font-heading)',
-                    marginBottom: '0.3rem',
-                    letterSpacing: '-0.02em',
-                  }}
-                >
-                  {stat.value}
-                </div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.88rem', letterSpacing: '0.5px' }}>
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+
         </div>
       </motion.div>
 
@@ -250,38 +205,7 @@ export default function Hero() {
       </motion.a>
 
       <style>{`
-        .hero-stats-container {
-          flex-direction: row;
-          gap: 0;
-        }
-        .hero-stat-item {
-          padding: 0 2.5rem;
-          border-left: 1px solid var(--color-border);
-        }
-        .hero-stat-item:first-child {
-          padding-left: 0;
-          border-left: none;
-        }
-        .hero-stat-item:last-child {
-          padding-right: 0;
-        }
-        
         @media (max-width: 768px) {
-          .hero-stats-container {
-            flex-direction: column;
-            gap: 1.5rem;
-            text-align: center;
-          }
-          .hero-stat-item {
-            padding: 0 !important;
-            border-left: none !important;
-            border-bottom: 1px solid var(--color-border);
-            padding-bottom: 1.5rem !important;
-          }
-          .hero-stat-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0 !important;
-          }
           .glow-orb {
             display: none; /* Hide large orbs on small mobile to improve perf/layout */
           }

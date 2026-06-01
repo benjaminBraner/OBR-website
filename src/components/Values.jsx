@@ -45,17 +45,17 @@ export default function Values() {
     <section id="values" className="section" style={{ position: 'relative', overflow: 'hidden', background: 'var(--color-bg)' }}>
 
       {/* Background grid */}
-      <div className="bg-grid" style={{ position: 'absolute', inset: 0, zIndex: 0 }} />
+      {/* <div className="bg-grid" style={{ position: 'absolute', inset: 0, zIndex: 0 }} /> */}
 
       {/* Glow orbs */}
       <div className="glow-orb" style={{
         width: '500px', height: '500px',
-        background: 'radial-gradient(circle, rgba(0, 91, 159, 0.07) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(94, 25, 20, 0.07) 0%, transparent 70%)',
         bottom: '0', left: '-10%',
       }} />
       <div className="glow-orb" style={{
         width: '350px', height: '350px',
-        background: 'radial-gradient(circle, rgba(0, 91, 159, 0.05) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(94, 25, 20, 0.05) 0%, transparent 70%)',
         top: '10%', right: '5%',
       }} />
 
@@ -91,11 +91,7 @@ export default function Values() {
         {/* Values grid */}
         <div className="values-cards-grid" style={{
           display: 'grid',
-          gap: '1px',
-          background: 'var(--color-border)',
-          borderRadius: 'var(--radius-xl)',
-          overflow: 'hidden',
-          border: '1px solid var(--color-border)',
+          gap: '2rem',
         }}>
           {values.map((val, i) => (
             <motion.div
@@ -110,15 +106,22 @@ export default function Values() {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '1.1rem',
-                transition: 'background 0.3s ease',
+                transition: 'all 0.35s ease',
                 position: 'relative',
                 overflow: 'hidden',
+                borderRadius: '24px',
+                border: '1px solid var(--color-border)',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.04)',
               }}
               onMouseOver={e => {
-                e.currentTarget.style.background = 'var(--color-surface)';
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 15px 30px rgba(94, 25, 20, 0.08)';
+                e.currentTarget.style.borderColor = 'rgba(94, 25, 20, 0.2)';
               }}
               onMouseOut={e => {
-                e.currentTarget.style.background = 'var(--color-bg)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.04)';
+                e.currentTarget.style.borderColor = 'var(--color-border)';
               }}
             >
               {/* Large background number */}
@@ -175,7 +178,12 @@ export default function Values() {
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
         .values-cards-grid {
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 1024px) {
+          .values-cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
         .value-card {
           padding: 2.75rem 2.5rem;
