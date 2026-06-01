@@ -116,13 +116,13 @@ export default function Hero() {
         <div style={{ position: 'relative', zIndex: 1, paddingTop: '7rem', paddingBottom: '5rem', maxWidth: '820px' }}>
 
           {/* Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className="section-label">Innovación en Construcción</div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Main headline */}
           <motion.h1

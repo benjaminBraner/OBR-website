@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 import {
   LineChart, Home, Waves, Warehouse, Building2,
   ArrowUpRight, CheckCircle2,
@@ -46,8 +47,35 @@ const services = [
 ];
 
 export default function Services() {
+  const triggerRef = useRef(null);
+  // Se activa cuando la tarjeta destacada entra en pantalla
+  const isDark = useInView(triggerRef, { margin: "0px 0px 200px 0px" });
+
   return (
-    <section id="services" className="section" style={{ position: 'relative' }}>
+    <motion.section 
+      id="services" 
+      className="section" 
+      animate={{ 
+        backgroundColor: isDark ? '#000000' : '#ffffff',
+        color: isDark ? '#ffffff' : '#09090b',
+        '--color-text-main': isDark ? '#ffffff' : '#09090b',
+        '--color-text-secondary': isDark ? '#e4e4e7' : '#3f3f46',
+        '--color-text-muted': isDark ? '#a1a1aa' : '#71717a',
+        '--color-primary': isDark ? '#c0524c' : '#5e1914',
+        '--color-primary-light': isDark ? '#e07570' : '#80231d',
+        '--icon-bg': isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.04)',
+        '--icon-bg-featured': isDark ? 'rgba(255, 255, 255, 0.12)' : 'rgba(0, 0, 0, 0.12)',
+        '--glass-bg': isDark ? 'rgba(20, 20, 20, 0.7)' : 'rgba(255, 255, 255, 0.7)',
+        '--glass-bg-hover': isDark ? 'rgba(35, 35, 35, 0.8)' : 'rgba(255, 255, 255, 0.9)',
+        '--color-border': isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
+        '--color-border-hover': isDark ? 'rgba(255, 255, 255, 0.25)' : 'rgba(0, 0, 0, 0.2)',
+        '--featured-bg': isDark ? 'linear-gradient(135deg, rgba(255, 255, 255,0.08) 0%, rgba(255, 255, 255,0.03) 100%)' : 'linear-gradient(135deg, rgba(0, 0, 0,0.06) 0%, rgba(0, 0, 0,0.02) 100%)',
+        '--featured-border': isDark ? '1px solid rgba(255, 255, 255,0.15)' : '1px solid rgba(0, 0, 0,0.2)',
+        '--featured-right-bg': isDark ? 'rgba(255, 255, 255,0.03)' : 'rgba(0, 0, 0,0.015)'
+      }}
+      transition={{ duration: 0.7, ease: "easeInOut" }}
+      style={{ position: 'relative' }}
+    >
 
       {/* Glow */}
       <div className="glow-orb" style={{
@@ -63,14 +91,21 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7 }}
-          style={{ textAlign: 'center', marginBottom: '5rem' }}
+          style={{ 
+            textAlign: 'center', 
+            marginBottom: '5rem',
+            backgroundColor: '#000000',
+            color: '#ffffff',
+            padding: '4rem 2rem',
+            borderRadius: 'var(--radius-xl)',
+          }}
         >
-          <div className="section-label" style={{ justifyContent: 'center' }}>Qué Hacemos</div>
-          <h2 className="section-title" style={{ margin: '0 auto 1.25rem' }}>
+          {/* <div className="section-label" style={{ justifyContent: 'center' }}>Qué Hacemos</div> */}
+          <h2 className="section-title" style={{ margin: '0 auto 1.25rem', color: '#ffffff' }}>
             Soluciones integrales de{' '}
             <span className="gradient-text-primary">construcción</span>
           </h2>
-          <p className="section-subtitle" style={{ margin: '0 auto' }}>
+          <p className="section-subtitle" style={{ margin: '0 auto', color: 'rgba(255, 255, 255, 0.8)' }}>
             Transformamos ideas en infraestructuras sólidas y de alto impacto
             visual, cubriendo cada etapa del proceso constructivo.
           </p>
@@ -78,6 +113,7 @@ export default function Services() {
 
         {/* ─── Featured: Estudio de Mercado ─── */}
         <motion.div
+          ref={triggerRef}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
@@ -89,8 +125,8 @@ export default function Services() {
             marginBottom: '2rem',
             borderRadius: 'var(--radius-xl)',
             overflow: 'hidden',
-            border: '1px solid rgba(0, 0, 0,0.2)',
-            background: 'linear-gradient(135deg, rgba(0, 0, 0,0.06) 0%, rgba(0, 0, 0,0.02) 100%)',
+            border: 'var(--featured-border)',
+            background: 'var(--featured-bg)',
             position: 'relative',
           }}
         >
@@ -124,7 +160,7 @@ export default function Services() {
             <div style={{
               width: '64px', height: '64px',
               borderRadius: 'var(--radius-md)',
-              background: 'rgba(0, 0, 0,0.12)',
+              background: 'var(--icon-bg-featured)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               color: 'var(--color-primary)',
             }}>
@@ -132,7 +168,7 @@ export default function Services() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: '2rem', marginBottom: '0.4rem', lineHeight: 1.2 }}>
+              <h3 style={{ fontSize: '2rem', marginBottom: '0.4rem', lineHeight: 1.2, color: 'var(--color-text-main)' }}>
                 {featuredService.title}
               </h3>
               <p style={{ color: 'var(--color-primary)', fontSize: '0.95rem', fontWeight: 500 }}>
@@ -158,8 +194,8 @@ export default function Services() {
           </div>
 
           {/* Right — highlights checklist */}
-          <div className="featured-service-right" style={{
-            background: 'rgba(0, 0, 0,0.015)',
+          <motion.div className="featured-service-right" style={{
+            background: 'var(--featured-right-bg)',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -191,7 +227,7 @@ export default function Services() {
                 {item}
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
 
         {/* ─── Other Services Grid ─── */}
@@ -219,7 +255,7 @@ export default function Services() {
               }}
               onMouseOver={e => {
                 e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.borderColor = 'rgba(0, 0, 0,0.2)';
+                e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(0,0,0,0.2)';
               }}
               onMouseOut={e => {
                 e.currentTarget.style.transform = 'translateY(0)';
@@ -245,14 +281,14 @@ export default function Services() {
               <div style={{
                 width: '52px', height: '52px',
                 borderRadius: 'var(--radius-sm)',
-                background: 'rgba(0, 0, 0,0.04)',
+                background: 'var(--icon-bg)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 color: 'var(--color-primary)',
               }}>
                 {service.icon}
               </div>
 
-              <h3 style={{ fontSize: '1.25rem', lineHeight: 1.3 }}>{service.title}</h3>
+              <h3 style={{ fontSize: '1.25rem', lineHeight: 1.3, color: 'var(--color-text-main)' }}>{service.title}</h3>
 
               <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, fontSize: '0.93rem', flex: 1 }}>
                 {service.desc}
@@ -281,7 +317,7 @@ export default function Services() {
         }
         .featured-service-right {
           padding: 3.5rem 3rem;
-          border-left: 1px solid rgba(0, 0, 0,0.1);
+          border-left: 1px solid var(--color-border);
         }
         @media (max-width: 768px) {
           .featured-service-left {
@@ -290,10 +326,10 @@ export default function Services() {
           .featured-service-right {
             padding: 2rem 1.5rem;
             border-left: none;
-            border-top: 1px solid rgba(0, 0, 0,0.1);
+            border-top: 1px solid var(--color-border);
           }
         }
       `}</style>
-    </section>
+    </motion.section>
   );
 }

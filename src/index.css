@@ -135,7 +135,7 @@ ul, ol {
 
 /* ─── Glass Panel ─── */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--glass-bg, rgba(255, 255, 255, 0.7));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--color-border);
@@ -145,7 +145,7 @@ ul, ol {
 
 .glass-panel:hover {
   border-color: var(--color-border-hover);
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--glass-bg-hover, rgba(255, 255, 255, 0.9));
 }
 
 /* ─── Gradient Text ─── */

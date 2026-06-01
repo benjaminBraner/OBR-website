@@ -852,7 +852,7 @@ export default function Projects() {
             transition={{ duration: 0.7 }}
             style={{ textAlign: 'center', marginBottom: '3rem' }}
           >
-            <div className="section-label" style={{ justifyContent: 'center' }}>Portafolio</div>
+            {/* <div className="section-label" style={{ justifyContent: 'center' }}>Portafolio</div> */}
             <h2 className="section-title" style={{ margin: '0 auto 1.25rem' }}>
               Nuestros <span className="gradient-text-primary">Proyectos</span>
             </h2>
