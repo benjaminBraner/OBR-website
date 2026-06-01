@@ -591,7 +591,7 @@ function Lightbox({ project, onClose }) {
           position: 'absolute',
           top: '1.5rem',
           right: '1.5rem',
-          color: '#000',
+          color: 'var(--color-text-main)',
           padding: '0.5rem',
           zIndex: 10,
         }}
@@ -614,7 +614,7 @@ function Lightbox({ project, onClose }) {
         }}>
           {project.category}
         </span>
-        <h3 style={{ fontSize: '1.8rem', color: '#000', marginTop: '0.5rem' }}>
+        <h3 style={{ fontSize: '1.8rem', color: 'var(--color-text-main)', marginTop: '0.5rem' }}>
           {project.title}
         </h3>
       </div>
@@ -657,7 +657,7 @@ function Lightbox({ project, onClose }) {
               className="lightbox-nav-btn lightbox-prev"
               style={{
                 position: 'absolute',
-                color: '#000',
+                color: 'var(--color-text-main)',
                 background: 'rgba(0, 0, 0,0.1)',
                 borderRadius: '50%',
                 width: '44px',
@@ -675,7 +675,7 @@ function Lightbox({ project, onClose }) {
               className="lightbox-nav-btn lightbox-next"
               style={{
                 position: 'absolute',
-                color: '#000',
+                color: 'var(--color-text-main)',
                 background: 'rgba(0, 0, 0,0.1)',
                 borderRadius: '50%',
                 width: '44px',
@@ -819,7 +819,7 @@ export default function Projects() {
             </span>
           )}
         </div>
-        <h3 style={{ fontSize: '1.4rem', color: '#000', marginBottom: '0.5rem' }}>
+        <h3 style={{ fontSize: '1.4rem', color: 'var(--color-text-main)', marginBottom: '0.5rem' }}>
           {project.title}
         </h3>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
@@ -842,7 +842,7 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="section" style={{ background: 'var(--color-surface)' }}>
+      <section id="projects" className="section">
         <div className="container">
           {/* Header */}
           <motion.div

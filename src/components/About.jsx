@@ -29,7 +29,7 @@ const cards = [
 
 export default function About() {
   return (
-    <section id="about" className="section" style={{ background: 'var(--color-surface)', position: 'relative', overflow: 'hidden' }}>
+    <section id="about" className="section" style={{ position: 'relative', overflow: 'hidden' }}>
       
       {/* Glow */}
       <div className="glow-orb" style={{
