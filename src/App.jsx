@@ -30,7 +30,7 @@ function App() {
         <Services />
         <Projects />
         <Values />
-        <Calendly />
+        {/* <Calendly /> */}
         <Contact />
       </main>
       <Footer />
