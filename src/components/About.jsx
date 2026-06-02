@@ -53,7 +53,7 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
-            <div className="section-label">Sobre Nosotros</div>
+            {/* <div className="section-label">Sobre Nosotros</div> */}
             <h2 className="section-title" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', marginBottom: '1.5rem' }}>
               Más que una constructora,{' '}
               <br />

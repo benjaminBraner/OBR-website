@@ -62,7 +62,7 @@ export default function Contact() {
           transition={{ duration: 0.7 }}
           style={{ textAlign: 'center', marginBottom: '4.5rem' }}
         >
-          <div className="section-label" style={{ justifyContent: 'center' }}>Hablemos</div>
+          {/* <div className="section-label" style={{ justifyContent: 'center' }}>Hablemos</div> */}
           <h2 className="section-title" style={{ margin: '0 auto 1.25rem' }}>
             ¿Listo para tu próximo{' '}
             <span className="gradient-text-primary">proyecto?</span>

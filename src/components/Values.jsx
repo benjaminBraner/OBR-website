@@ -69,7 +69,7 @@ export default function Values() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
-            <div className="section-label">Lo que nos define</div>
+            {/* <div className="section-label">Lo que nos define</div> */}
             <h2 className="section-title">
               Nuestros{' '}
               <span className="gradient-text-primary">Valores</span>
