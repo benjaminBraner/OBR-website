@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WhatsAppButton({ isVisible }) {
-  // Número de ejemplo, puedes cambiarlo al tuyo (ej: 59170000000)
-  const phoneNumber = '59170000000';
+  // Número de la empresa
+  const phoneNumber = '59178687916';
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (

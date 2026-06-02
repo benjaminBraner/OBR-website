@@ -6,17 +6,17 @@ const contactInfo = [
   {
     icon: <MapPin size={20} strokeWidth={1.5} />,
     label: 'Ubicación',
-    value: 'Santa Cruz de la Sierra, Bolivia',
+    value: 'Santa Cruz, Bolivia, Av. Roca y Colorado entre 4to y 5to anillo',
   },
   {
     icon: <Phone size={20} strokeWidth={1.5} />,
     label: 'Teléfono',
-    value: '+591 700 00000',
+    value: '+591 78687916',
   },
   {
     icon: <Mail size={20} strokeWidth={1.5} />,
     label: 'Correo',
-    value: 'contacto@obr.com.bo',
+    value: 'constructobr@gmail.com',
   },
 ];
 
@@ -29,13 +29,43 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+
+    try {
+      // Usamos el correo real de la empresa temporalmente para que lo actives
+      const response = await fetch("https://formsubmit.co/ajax/constructobr@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          Nombre: form.name,
+          Email: form.email,
+          Telefono: form.phone || 'No proporcionado',
+          Servicio: form.service || 'No especificado',
+          Mensaje: form.message,
+          _subject: `Nuevo Mensaje Web: ${form.name}`,
+          _replyto: form.email,
+          _template: "table" // Diseño profesional en forma de tabla
+        }),
+      });
+
+      const result = await response.json();
+      
+      if (result.success === "true" || result.success === true || response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Hubo un problema al enviar el mensaje. Por favor, intenta de nuevo más tarde.");
+      }
+    } catch (error) {
+      alert("Error de conexión. Por favor, revisa tu conexión a internet.");
+      console.error(error);
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   };
 
   return (

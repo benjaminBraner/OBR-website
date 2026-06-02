@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Globe, ArrowUpRight } from 'lucide-react';
+
+const FacebookIcon = ({ size = 24 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+);
+
+const InstagramIcon = ({ size = 24 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+);
 import logoSVG from '../assets/logo-obr.png';
 
 export default function Footer() {
@@ -61,10 +69,18 @@ export default function Footer() {
             }}>
               <img src={logoSVG} alt="OBR Construcción" style={{ height: '42px', width: 'auto' }} />
             </a>
-            <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, fontSize: '0.95rem' }}>
+            <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
               Innovación y calidad superior en cada proyecto de construcción.
               Tu socio estratégico en Bolivia.
             </p>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <a href="https://www.facebook.com/share/1HuQdPW6Wm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s ease' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text-muted)'}>
+                <FacebookIcon size={24} />
+              </a>
+              <a href="https://www.instagram.com/constructoraobr?igsh=YWg4Y2hjcHU2NmN2" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s ease' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text-muted)'}>
+                <InstagramIcon size={24} />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -113,17 +129,17 @@ export default function Footer() {
               Contacto
             </h4>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
-                <MapPin size={18} color="var(--color-primary)" style={{ flexShrink: 0 }} />
-                Santa Cruz, Bolivia
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
+                <MapPin size={18} color="var(--color-primary)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <span>Santa Cruz, Bolivia<br/>Av. Roca y Colorado<br/>entre 4to y 5to anillo</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
                 <Phone size={18} color="var(--color-primary)" style={{ flexShrink: 0 }} />
-                +591 70000000
+                +591 78687916
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
                 <Mail size={18} color="var(--color-primary)" style={{ flexShrink: 0 }} />
-                contacto@obr.com.bo
+                constructobr@gmail.com
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
                 <Globe size={18} color="var(--color-primary)" style={{ flexShrink: 0 }} />
