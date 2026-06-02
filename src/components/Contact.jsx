@@ -35,7 +35,7 @@ export default function Contact() {
 
     try {
       // Usamos el correo real de la empresa temporalmente para que lo actives
-      const response = await fetch("https://formsubmit.co/ajax/constructobr@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/0880693abc403ed87229cfd57a6d4ac9", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
