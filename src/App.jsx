@@ -38,6 +38,7 @@ function App() {
             '--color-text-main': isDark ? '#ffffff' : '#09090b',
             '--color-text-secondary': isDark ? '#e4e4e7' : '#3f3f46',
             '--color-text-muted': isDark ? '#a1a1aa' : '#71717a',
+            '--color-text-adaptive': isDark ? '#a1a1aa' : '#5e1914',
             '--color-primary': isDark ? '#c0524c' : '#5e1914',
             '--color-primary-light': isDark ? '#e07570' : '#80231d',
             '--icon-bg': isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.04)',

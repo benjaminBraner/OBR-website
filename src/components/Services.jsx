@@ -101,18 +101,17 @@ export default function Services({ featuredRef }) {
             marginBottom: '2rem',
             borderRadius: 'var(--radius-xl)',
             overflow: 'hidden',
-            border: 'var(--featured-border)',
             background: 'var(--featured-bg)',
             position: 'relative',
           }}
         >
           {/* Decorative line */}
-          <div style={{
+          {/* <div style={{
             position: 'absolute',
             top: 0, left: 0, right: 0,
             height: '2px',
             background: 'linear-gradient(90deg, transparent, var(--color-primary), transparent)',
-          }} />
+          }} /> */}
 
           {/* Left — content */}
           <div className="featured-service-left" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -147,7 +146,7 @@ export default function Services({ featuredRef }) {
               <h3 style={{ fontSize: '2rem', marginBottom: '0.4rem', lineHeight: 1.2, color: 'var(--color-text-main)' }}>
                 {featuredService.title}
               </h3>
-              <p style={{ color: 'var(--color-primary)', fontSize: '0.95rem', fontWeight: 500 }}>
+              <p style={{ color: 'var(--color-text-adaptive)', fontSize: '0.95rem', fontWeight: 500 }}>
                 {featuredService.subtitle}
               </p>
             </div>
@@ -160,7 +159,7 @@ export default function Services({ featuredRef }) {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              color: 'var(--color-primary-light)',
+              color: 'var(--color-text-adaptive)',
               fontSize: '0.95rem',
               fontWeight: 600,
               marginTop: '0.5rem',
@@ -274,7 +273,7 @@ export default function Services({ featuredRef }) {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.4rem',
-                color: 'var(--color-primary)',
+                color: 'var(--color-text-adaptive)',
                 fontSize: '0.85rem',
                 fontWeight: 600,
                 marginTop: '0.25rem',
