@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
-import aboutImg from '../assets/workers-gemini.png';
+// import aboutImg from '../assets/workers-gemini.png';
+// import aboutImg from '../assets/workers-gemini.png';
+// import aboutImg from '../assets/workers-gemini.png';
+import aboutImg from '../assets/about-img-1-bw.png';
+// import aboutImg from '../assets/about-img-3-bw.png';
 
 const features = [
   'Gestión integral de proyectos',
@@ -94,7 +98,7 @@ export default function About() {
               <div style={{
                 position: 'absolute',
                 inset: 0,
-                background: 'linear-gradient(to top, rgba(255, 255, 255,0.8) 0%, transparent 40%)',
+                // background: 'linear-gradient(to top, rgba(255, 255, 255,0.8) 0%, transparent 40%)',
               }} />
             </div>
             
