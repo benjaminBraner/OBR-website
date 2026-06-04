@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Values from './components/Values';
 import Contact from './components/Contact';
+import MissionVision from './components/MissionVision';
 import Footer from './components/Footer';
 import Calendly from './components/Calendly';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -60,6 +61,7 @@ function App() {
         <Values />
         {/* <Calendly /> */}
         <Contact />
+        <MissionVision />
       </main>
       <Footer />
       <WhatsAppButton isVisible={showWsp} />
