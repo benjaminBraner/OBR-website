@@ -177,8 +177,8 @@ export default function Contact() {
               fontSize: '0.875rem',
               lineHeight: 1.7,
             }}>
-              🕐 Tiempo de respuesta: <strong style={{ color: 'var(--color-text-secondary)' }}>menos de 24 h</strong><br />
-              📅 Horario: <strong style={{ color: 'var(--color-text-secondary)' }}>Lun–Vie · 8:00 – 18:00</strong>
+              Tiempo de respuesta: <strong style={{ color: 'var(--color-text-secondary)' }}>menos de 24 h</strong><br />
+              Horario: <strong style={{ color: 'var(--color-text-secondary)' }}>Lun–Vie · 8:00 – 18:00</strong>
             </div>
           </motion.div>
 

@@ -141,7 +141,7 @@ export default function About() {
                 fontFamily: 'var(--font-heading)',
                 lineHeight: 1,
               }}>
-                15+
+                17+
               </div>
               <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', fontWeight: 500, lineHeight: 1.4, textTransform: 'uppercase', letterSpacing: '1px' }}>
                 Años de<br/>Excelencia

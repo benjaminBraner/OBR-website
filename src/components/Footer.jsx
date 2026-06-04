@@ -71,7 +71,7 @@ export default function Footer() {
             </a>
             <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
               Innovación y calidad superior en cada proyecto de construcción.
-              Tu socio estratégico en Bolivia.
+              {/* Tu socio estratégico en Bolivia. */}
             </p>
             <div style={{ display: 'flex', gap: '1rem' }}>
               <a href="https://www.facebook.com/share/1HuQdPW6Wm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', transition: 'color 0.2s ease' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text-muted)'}>
