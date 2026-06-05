@@ -6,6 +6,7 @@ import Stats from './components/Stats';
 import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
+import ProjectMap from './components/ProjectMap';
 import Values from './components/Values';
 import Contact from './components/Contact';
 import MissionVision from './components/MissionVision';
@@ -57,6 +58,7 @@ function App() {
           <About />
           <Services featuredRef={servicesTriggerRef} />
           <Projects />
+          <ProjectMap />
         </motion.div>
         <Values />
         {/* <Calendly /> */}

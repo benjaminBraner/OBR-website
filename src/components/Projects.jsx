@@ -723,8 +723,16 @@ export default function Projects() {
     const handleFilter = (e) => {
       setActiveCategory(e.detail);
     };
+    const handleOpenLightbox = (e) => {
+      const proj = projects.find(p => p.id === e.detail);
+      if (proj) setLightboxProject(proj);
+    };
     window.addEventListener('filterProjects', handleFilter);
-    return () => window.removeEventListener('filterProjects', handleFilter);
+    window.addEventListener('openLightbox', handleOpenLightbox);
+    return () => {
+      window.removeEventListener('filterProjects', handleFilter);
+      window.removeEventListener('openLightbox', handleOpenLightbox);
+    };
   }, []);
 
   const filtered = activeCategory === 'Todos'
