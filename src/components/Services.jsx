@@ -76,7 +76,6 @@ export default function Services({ featuredRef }) {
             borderRadius: '2.5rem',
           }}
         >
-          {/* <div className="section-label" style={{ justifyContent: 'center' }}>Qué Hacemos</div> */}
           <h2 className="section-title" style={{ margin: '0 auto 1.25rem', color: '#ffffff' }}>
             Soluciones integrales de{' '}
             <span className="gradient-text-primary">construcción</span>

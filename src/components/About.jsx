@@ -1,10 +1,6 @@
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
-// import aboutImg from '../assets/workers-gemini.png';
-// import aboutImg from '../assets/workers-gemini.png';
-// import aboutImg from '../assets/workers-gemini.png';
 import aboutImg from '../assets/about-img-1-bw.png';
-// import aboutImg from '../assets/about-img-3-bw.png';
 
 const features = [
   'Gestión integral de proyectos',
@@ -40,7 +36,6 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
-            {/* <div className="section-label">Sobre Nosotros</div> */}
             <h2 className="section-title" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', marginBottom: '1.5rem' }}>
               Más que una constructora,{' '}
               <br />
