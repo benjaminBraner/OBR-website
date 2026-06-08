@@ -105,14 +105,6 @@ export default function Services({ featuredRef }) {
             position: 'relative',
           }}
         >
-          {/* Decorative line */}
-          {/* <div style={{
-            position: 'absolute',
-            top: 0, left: 0, right: 0,
-            height: '2px',
-            background: 'linear-gradient(90deg, transparent, var(--color-primary), transparent)',
-          }} /> */}
-
           {/* Left — content */}
           <div className="featured-service-left" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div style={{

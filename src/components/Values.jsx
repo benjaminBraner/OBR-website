@@ -44,9 +44,6 @@ export default function Values() {
   return (
     <section id="values" className="section" style={{ position: 'relative', overflow: 'hidden', background: 'var(--color-bg)' }}>
 
-      {/* Background grid */}
-      {/* <div className="bg-grid" style={{ position: 'absolute', inset: 0, zIndex: 0 }} /> */}
-
       {/* Glow orbs */}
       <div className="glow-orb" style={{
         width: '500px', height: '500px',
@@ -69,7 +66,6 @@ export default function Values() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7 }}
           >
-            {/* <div className="section-label">Lo que nos define</div> */}
             <h2 className="section-title">
               Nuestros{' '}
               <span className="gradient-text-primary">Valores</span>

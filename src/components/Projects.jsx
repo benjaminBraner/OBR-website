@@ -110,13 +110,7 @@ import fernandaCabreraFrontal2 from '../assets/VIVIENDA FERNANDA CABRERA/fernand
 import fernandaCabreraFrontal3 from '../assets/VIVIENDA FERNANDA CABRERA/fernanda-cabrera-frontal-3.png';
 
 /* ─── PISCINA CIUDAD JARDIN ─── */
-import ciudadJardin1 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-1.jpeg';
-import ciudadJardin2 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-2.jpeg';
 import ciudadJardin3 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-3.jpeg';
-import ciudadJardin4 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-4.jpeg';
-import ciudadJardin5 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-5.jpeg';
-import ciudadJardin6 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-6.jpeg';
-import ciudadJardin7 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-7.jpeg';
 import ciudadJardinConstruccion1 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-1.png';
 import ciudadJardinConstruccion2 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-2.png';
 import ciudadJardinConstruccion3 from '../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-3.png';
@@ -128,14 +122,6 @@ import ciudadJardinConstruccion6 from '../assets/PISCINA CIUDAD JARDIN/piscina-c
 import piscinaEmilene1 from '../assets/PISCINA EMILENE/piscina-emilene-1.jpeg';
 import piscinaEmilene2 from '../assets/PISCINA EMILENE/piscina-emilene-2.jpeg';
 import piscinaEmilene3 from '../assets/PISCINA EMILENE/piscina-emilene-3.jpeg';
-
-/* ─── PISCINA URB. EL DUENDE ─── */
-import elDuende1 from '../assets/PISCINA URB. EL DUENDE/piscina-urb-el-duende-1.png';
-// import elDuendeConstruccion1 from '../assets/PISCINA URB. EL DUENDE/piscina-urb-el-duende-construccion-1.jpeg';
-import elDuendeConstruccion2 from '../assets/PISCINA URB. EL DUENDE/piscina-urb-el-duende-construccion-2.jpeg';
-import elDuendeConstruccion3 from '../assets/PISCINA URB. EL DUENDE/piscina-urb-el-duende-construccion-3.jpeg';
-import elDuendeConstruccion4 from '../assets/PISCINA URB. EL DUENDE/piscina-urb-el-duende-construccion-4.jpeg';
-import elDuendeConstruccion5 from '../assets/PISCINA URB. EL DUENDE/piscina-urb-el-duende-construccion-5.jpeg';
 
 /* ─── LOMAS DE ARENA ─── */
 import lomasArenaFrontal1 from '../assets/LOMAS DE ARENA/lomas-arena-frontal-1.jpeg';
@@ -405,22 +391,6 @@ const projects = [
   },
   {
     id: 11,
-    status: 'en_desarrollo',
-    title: 'Piscina Urb. El Duende',
-    category: 'Áreas Sociales',
-    image: elDuende1,
-    gallery: [
-      elDuende1,
-      // elDuendeConstruccion1,
-      elDuendeConstruccion2,
-      elDuendeConstruccion3,
-      elDuendeConstruccion4,
-      elDuendeConstruccion5
-    ],
-    desc: 'Área recreativa con piscina para urbanización exclusiva.',
-  },
-  {
-    id: 12,
     status: 'terminado',
     title: 'Lomas de Arena',
     category: 'Residencial',
@@ -435,7 +405,7 @@ const projects = [
     desc: 'Proyecto residencial en zona privilegiada con vistas naturales.',
   },
   {
-    id: 13,
+    id: 12,
     status: 'terminado',
     title: 'Remodelación Las Palmas',
     category: 'Residencial',
@@ -454,7 +424,7 @@ const projects = [
     desc: 'Remodelación integral de vivienda con nueva distribución y acabados.',
   },
   {
-    id: 14,
+    id: 13,
     status: 'terminado',
     title: 'Galpón Autobol 3',
     category: 'Industrial',
@@ -468,7 +438,7 @@ const projects = [
     desc: 'Galpón industrial de gran escala para operaciones automotrices.',
   },
   {
-    id: 15,
+    id: 14,
     status: 'terminado',
     title: 'Galpón Autobol 4',
     category: 'Industrial',
@@ -481,7 +451,7 @@ const projects = [
     desc: 'Expansión industrial con estructura reforzada de alto rendimiento.',
   },
   {
-    id: 16,
+    id: 15,
     status: 'terminado',
     title: 'Galpón Autobol Center 1',
     category: 'Industrial',
@@ -492,7 +462,7 @@ const projects = [
     desc: 'Centro industrial automotriz con diseño funcional optimizado.',
   },
   {
-    id: 17,
+    id: 16,
     status: 'terminado',
     title: 'Galpón Autobol Center 2',
     category: 'Industrial',
@@ -505,7 +475,7 @@ const projects = [
     desc: 'Segunda fase del complejo industrial Autobol.',
   },
   {
-    id: 18,
+    id: 17,
     status: 'terminado',
     title: 'Galpón Honda',
     category: 'Industrial',
@@ -526,7 +496,7 @@ const projects = [
     desc: 'Galpón corporativo para operaciones de Honda.',
   },
   {
-    id: 19,
+    id: 18,
     status: 'terminado',
     title: 'Galpón Visal 2024',
     category: 'Industrial',
@@ -540,7 +510,7 @@ const projects = [
     desc: 'Construcción industrial con estándares modernos de calidad.',
   },
   {
-    id: 20,
+    id: 19,
     status: 'terminado',
     title: 'Pavimento Honda',
     category: 'Industrial',
@@ -860,7 +830,6 @@ export default function Projects() {
             transition={{ duration: 0.7 }}
             style={{ textAlign: 'center', marginBottom: '3rem' }}
           >
-            {/* <div className="section-label" style={{ justifyContent: 'center' }}>Portafolio</div> */}
             <h2 className="section-title" style={{ margin: '0 auto 1.25rem' }}>
               Nuestros <span className="gradient-text-primary">Proyectos</span>
             </h2>

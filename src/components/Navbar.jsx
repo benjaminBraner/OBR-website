@@ -8,7 +8,6 @@ const navLinks = [
   { label: 'Servicios', href: '#services' },
   { label: 'Proyectos', href: '#projects' },
   { label: 'Valores', href: '#values' },
-  // { label: 'Contacto', href: '#contact' },
 ];
 
 export default function Navbar() {

@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 import heroBg from '../assets/EDIFICIO KUBOO TOBOROCHI/kubo-prueba-bw.jpg';
 
@@ -87,9 +87,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Grid pattern */}
-      {/* <div className="bg-grid" style={{ position: 'absolute', inset: 0, zIndex: 0 }} /> */}
-
       {/* Animated accent line */}
       <motion.div
         initial={{ scaleY: 0 }}
@@ -114,15 +111,6 @@ export default function Hero() {
         className="container"
       >
         <div style={{ position: 'relative', zIndex: 1, paddingTop: '7rem', paddingBottom: '5rem', maxWidth: '820px' }}>
-
-          {/* Badge */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="section-label">Innovación en Construcción</div>
-          </motion.div> */}
 
           {/* Main headline */}
           <motion.h1
@@ -200,8 +188,6 @@ Transformamos proyectos corporativos y residenciales en realidades de lujo.
           textTransform: 'uppercase',
         }}
       >
-        {/* <span>Scroll</span>
-        <ChevronDown size={20} /> */}
       </motion.a>
 
       <style>{`
