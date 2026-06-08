@@ -41,6 +41,7 @@ export default function Hero() {
         <img
           src={heroBg}
           alt=""
+          aria-hidden="true"
           style={{
             width: '100%',
             height: '100%',

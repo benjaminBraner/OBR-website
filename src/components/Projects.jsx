@@ -99,10 +99,6 @@ import salvatierraInterior14 from '../assets/VIVIENDA SALVATIERRA/salvatierra-in
 /* ─── VIVIENDA ARACELY SALVATIERRA ─── */
 import aracelySalvatierraFrontal1 from '../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-frontal-1.png';
 import aracelySalvatierraConstruccion1 from '../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-1.png';
-import aracelySalvatierraFrontal2 from '../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-frontal-2.jpeg';
-import aracelySalvatierraFrontal3 from '../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-frontal-3.jpeg';
-import aracelySalvatierraPiscina1 from '../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-piscina-1.png';
-import aracelySalvatierraPiscina2 from '../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-piscina-2.png';
 
 /* ─── VIVIENDA FERNANDA CABRERA ─── */
 import fernandaCabreraFrontal1 from '../assets/VIVIENDA FERNANDA CABRERA/fernanda-cabrera-frontal-1.png';
@@ -360,13 +356,7 @@ const projects = [
     category: 'Áreas Sociales',
     image: ciudadJardin3,
     gallery: [
-      // ciudadJardin1,
-      // ciudadJardin2,
       ciudadJardin3,
-      // ciudadJardin4,
-      // ciudadJardin5,
-      // ciudadJardin6,
-      // ciudadJardin7,
       ciudadJardinConstruccion1,
       ciudadJardinConstruccion2,
       ciudadJardinConstruccion3,

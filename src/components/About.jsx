@@ -93,6 +93,7 @@ export default function About() {
               <img 
                 src={aboutImg} 
                 alt="OBR Construction Building" 
+                loading="lazy"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
               />
               <div style={{
