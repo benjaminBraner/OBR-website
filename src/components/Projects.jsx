@@ -516,160 +516,311 @@ const projects = [
   },
 ];
 
-/* ─── Lightbox Component ─── */
-function Lightbox({ project, onClose }) {
-  const [currentIdx, setCurrentIdx] = useState(0);
+/* ─── Project Gallery Modal ─── */
+function ProjectGalleryModal({ project, onClose }) {
+  const [currentIdx, setCurrentIdx] = useState(null);
+  
+  // Prevent body scrolling when modal is open
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   if (!project) return null;
 
   const images = project.gallery;
-  const prev = () => setCurrentIdx((c) => (c - 1 + images.length) % images.length);
-  const next = () => setCurrentIdx((c) => (c + 1) % images.length);
+  const prev = (e) => { e.stopPropagation(); setCurrentIdx((c) => (c - 1 + images.length) % images.length); };
+  const next = (e) => { e.stopPropagation(); setCurrentIdx((c) => (c + 1) % images.length); };
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       style={{
         position: 'fixed',
         inset: 0,
         zIndex: 200,
-        background: 'rgba(255, 255, 255,0.92)',
-        backdropFilter: 'blur(20px)',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '2rem',
+        background: 'var(--color-bg)',
+        overflowY: 'auto',
+        padding: '2rem 1rem',
       }}
-      onClick={onClose}
     >
-      {/* Close button */}
+      {/* Close button for Gallery Modal */}
       <button
         onClick={onClose}
         style={{
-          position: 'absolute',
-          top: '1.5rem',
-          right: '1.5rem',
+          position: 'fixed',
+          top: '2rem',
+          right: '2rem',
           color: 'var(--color-text-main)',
-          padding: '0.5rem',
-          zIndex: 10,
-        }}
-      >
-        <X size={28} />
-      </button>
-
-      {/* Project info */}
-      <div style={{
-        textAlign: 'center',
-        marginBottom: '1.5rem',
-        zIndex: 10,
-      }} onClick={e => e.stopPropagation()}>
-        <span style={{
-          color: 'var(--color-primary)',
-          fontSize: '0.8rem',
-          fontWeight: 600,
-          letterSpacing: '2px',
-          textTransform: 'uppercase',
-        }}>
-          {project.category}
-        </span>
-        <h3 style={{ fontSize: '1.8rem', color: 'var(--color-text-main)', marginTop: '0.5rem' }}>
-          {project.title}
-        </h3>
-      </div>
-
-      {/* Image */}
-      <div
-        onClick={e => e.stopPropagation()}
-        style={{
-          position: 'relative',
-          maxWidth: '900px',
-          width: '100%',
-          maxHeight: '65vh',
+          background: 'var(--color-surface-2)',
+          border: '1px solid var(--color-border)',
+          borderRadius: '50%',
+          width: '48px',
+          height: '48px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          cursor: 'pointer',
+          zIndex: 210,
+          boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+          transition: 'transform 0.2s ease',
         }}
+        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
       >
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={currentIdx}
-            src={images[currentIdx]}
-            alt={project.title}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.3 }}
-            style={{
-              width: '100%',
-              maxHeight: '65vh',
-              objectFit: 'contain',
-              borderRadius: 'var(--radius-lg)',
-            }}
-          />
-        </AnimatePresence>
+        <X size={24} />
+      </button>
 
-        {images.length > 1 && (
-          <>
-            <button
-              onClick={prev}
-              className="lightbox-nav-btn lightbox-prev"
-              style={{
-                position: 'absolute',
-                color: 'var(--color-text-main)',
-                background: 'rgba(0, 0, 0,0.1)',
-                borderRadius: '50%',
-                width: '44px',
-                height: '44px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                zIndex: 20,
-              }}
-            >
-              <ChevronLeft size={24} />
-            </button>
-            <button
-              onClick={next}
-              className="lightbox-nav-btn lightbox-next"
-              style={{
-                position: 'absolute',
-                color: 'var(--color-text-main)',
-                background: 'rgba(0, 0, 0,0.1)',
-                borderRadius: '50%',
-                width: '44px',
-                height: '44px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                zIndex: 20,
-              }}
-            >
-              <ChevronRight size={24} />
-            </button>
-          </>
-        )}
+      {/* Gallery Header */}
+      <div style={{ textAlign: 'center', marginBottom: '3rem', paddingTop: '2rem' }}>
+        <motion.span 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          style={{
+            color: 'var(--color-primary)',
+            fontSize: '0.8rem',
+            fontWeight: 600,
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
+          }}
+        >
+          {project.category}
+        </motion.span>
+        <motion.h3 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          style={{ 
+            fontSize: 'clamp(2rem, 5vw, 3.5rem)', 
+            color: 'var(--color-text-main)', 
+            marginTop: '1rem', 
+            fontFamily: 'var(--font-heading)',
+            lineHeight: 1.1
+          }}
+        >
+          {project.title}
+        </motion.h3>
+        <motion.p 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          style={{ 
+            color: 'var(--color-text-secondary)', 
+            maxWidth: '600px', 
+            margin: '1.5rem auto 0',
+            fontSize: '1.1rem',
+            lineHeight: 1.6
+          }}
+        >
+          {project.desc}
+        </motion.p>
       </div>
 
-      {/* Dots */}
-      {images.length > 1 && (
-        <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1.5rem' }} onClick={e => e.stopPropagation()}>
-          {images.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentIdx(idx)}
-              style={{
-                width: idx === currentIdx ? '24px' : '8px',
-                height: '8px',
-                borderRadius: '100px',
-                background: idx === currentIdx ? 'var(--color-primary)' : 'rgba(0, 0, 0,0.3)',
-                transition: 'all 0.3s ease',
-              }}
+      {/* Grid of Images */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: '1.5rem',
+          maxWidth: '1400px',
+          margin: '0 auto',
+          paddingBottom: '4rem'
+        }}
+      >
+        {images.map((imgSrc, idx) => (
+          <motion.div
+            key={idx}
+            whileHover={{ scale: 1.02, y: -5 }}
+            onClick={() => setCurrentIdx(idx)}
+            style={{
+              cursor: 'pointer',
+              borderRadius: 'var(--radius-lg)',
+              overflow: 'hidden',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+              background: 'var(--color-surface-2)',
+              position: 'relative',
+              aspectRatio: '4/3'
+            }}
+          >
+            <img 
+              src={imgSrc} 
+              alt={`${project.title} - ${idx + 1}`} 
+              loading="lazy"
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'cover',
+                transition: 'transform 0.5s ease'
+              }} 
             />
-          ))}
-        </div>
-      )}
+            <div 
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'rgba(0,0,0,0.1)',
+                opacity: 0,
+                transition: 'opacity 0.3s ease'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.opacity = '1'}
+              onMouseOut={(e) => e.currentTarget.style.opacity = '0'}
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+
+      {/* Expanded Image Viewer (Lightbox) */}
+      <AnimatePresence>
+        {currentIdx !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 300,
+              background: 'rgba(0,0,0,0.95)',
+              backdropFilter: 'blur(10px)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            onClick={() => setCurrentIdx(null)}
+          >
+            <button
+              onClick={() => setCurrentIdx(null)}
+              style={{
+                position: 'absolute',
+                top: '2rem',
+                right: '2rem',
+                color: '#fff',
+                background: 'rgba(255,255,255,0.1)',
+                borderRadius: '50%',
+                width: '48px',
+                height: '48px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                zIndex: 310,
+                border: 'none',
+                transition: 'background 0.2s ease',
+              }}
+              onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
+              onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+            >
+              <X size={24} />
+            </button>
+
+            <div
+              style={{
+                position: 'relative',
+                maxWidth: '90vw',
+                width: '100%',
+                height: '85vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={currentIdx}
+                  src={images[currentIdx]}
+                  alt={`${project.title} - ${currentIdx + 1}`}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: '100%',
+                    objectFit: 'contain',
+                    borderRadius: '8px',
+                    boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
+                  }}
+                />
+              </AnimatePresence>
+
+              {images.length > 1 && (
+                <>
+                  <button
+                    onClick={prev}
+                    style={{
+                      position: 'absolute',
+                      left: '2%',
+                      color: '#fff',
+                      background: 'rgba(255,255,255,0.1)',
+                      borderRadius: '50%',
+                      width: '56px',
+                      height: '56px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      zIndex: 320,
+                      border: 'none',
+                      cursor: 'pointer',
+                      backdropFilter: 'blur(5px)',
+                      transition: 'background 0.2s ease',
+                    }}
+                    onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
+                    onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+                  >
+                    <ChevronLeft size={32} />
+                  </button>
+                  <button
+                    onClick={next}
+                    style={{
+                      position: 'absolute',
+                      right: '2%',
+                      color: '#fff',
+                      background: 'rgba(255,255,255,0.1)',
+                      borderRadius: '50%',
+                      width: '56px',
+                      height: '56px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      zIndex: 320,
+                      border: 'none',
+                      cursor: 'pointer',
+                      backdropFilter: 'blur(5px)',
+                      transition: 'background 0.2s ease',
+                    }}
+                    onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
+                    onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+                  >
+                    <ChevronRight size={32} />
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Image Counter */}
+            <div style={{
+              position: 'absolute',
+              bottom: '2rem',
+              color: 'rgba(255,255,255,0.7)',
+              fontSize: '0.9rem',
+              letterSpacing: '2px',
+            }}>
+              {currentIdx + 1} / {images.length}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
@@ -910,10 +1061,10 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Lightbox */}
+      {/* Project Gallery Modal */}
       <AnimatePresence>
         {lightboxProject && (
-          <Lightbox
+          <ProjectGalleryModal
             project={lightboxProject}
             onClose={() => setLightboxProject(null)}
           />
