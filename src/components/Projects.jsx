@@ -522,10 +522,12 @@ function ProjectGalleryModal({ project, onClose }) {
   
   // Prevent body scrolling when modal is open
   useEffect(() => {
+    window.dispatchEvent(new Event('modalOpen'));
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = originalOverflow;
+      window.dispatchEvent(new Event('modalClose'));
     };
   }, []);
 
@@ -812,7 +814,7 @@ function ProjectGalleryModal({ project, onClose }) {
             {/* Image Counter */}
             <div style={{
               position: 'absolute',
-              bottom: '2rem',
+              bottom: '1.5rem',
               color: 'rgba(255,255,255,0.7)',
               fontSize: '0.9rem',
               letterSpacing: '2px',

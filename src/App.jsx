@@ -14,6 +14,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   const [showWsp, setShowWsp] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const servicesTriggerRef = useRef(null);
   const isDark = useInView(servicesTriggerRef, { margin: "0px 0px 200px 0px" });
 
@@ -23,6 +24,17 @@ function App() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const onModalOpen = () => setIsModalOpen(true);
+    const onModalClose = () => setIsModalOpen(false);
+    window.addEventListener('modalOpen', onModalOpen);
+    window.addEventListener('modalClose', onModalClose);
+    return () => {
+      window.removeEventListener('modalOpen', onModalOpen);
+      window.removeEventListener('modalClose', onModalClose);
+    };
   }, []);
 
   return (
@@ -62,7 +74,7 @@ function App() {
         <MissionVision />
       </main>
       <Footer />
-      <WhatsAppButton isVisible={showWsp} />
+      <WhatsAppButton isVisible={showWsp && !isModalOpen} />
     </>
   );
 }
