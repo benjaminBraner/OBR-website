@@ -1,59 +1,73 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const stats = [
-  { value: '17+', label: 'Años de experiencia' },
-  { value: '50+', label: 'Proyectos completados' },
-  { value: '100%', label: 'Clientes satisfechos' },
+	{ value: "17+", label: "Años de experiencia" },
+	{ value: "50+", label: "Proyectos completados" },
+	{ value: "100%", label: "Clientes satisfechos" },
 ];
 
 export default function Stats() {
-  return (
-    <section style={{ background: 'var(--color-surface)', borderBottom: '1px solid var(--color-border)' }}>
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.7 }}
-          className="stats-container"
-          style={{
-            display: 'flex',
-            padding: '4rem 0',
-          }}
-        >
-          {stats.map((stat, i) => (
-            <motion.div
-              key={i}
-              className="stat-item"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              style={{
-                flex: '1',
-              }}
-            >
-              <div
-                style={{
-                  fontSize: '3rem',
-                  fontWeight: 300,
-                  fontFamily: 'var(--font-heading)',
-                  marginBottom: '0.3rem',
-                  letterSpacing: '-0.03em',
-                  color: 'var(--color-primary)',
-                }}
-              >
-                {stat.value}
-              </div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', letterSpacing: '0.5px' }}>
-                {stat.label}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
+	return (
+		<section
+			style={{
+				background: "var(--color-surface)",
+				borderBottom: "1px solid var(--color-border)",
+			}}
+		>
+			<div className="container">
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true, margin: "-50px" }}
+					transition={{ duration: 0.7 }}
+					className="stats-container"
+					style={{
+						display: "flex",
+						padding: "4rem 0",
+					}}
+				>
+					{stats.map((stat, i) => (
+						<motion.div
+							key={i}
+							className="stat-item"
+							initial={{ opacity: 0, y: 10 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							transition={{
+								duration: 0.5,
+								delay: i * 0.1,
+							}}
+							style={{
+								flex: "1",
+							}}
+						>
+							<div
+								style={{
+									fontSize: "3rem",
+									fontWeight: 300,
+									fontFamily: "var(--font-heading)",
+									marginBottom: "0.3rem",
+									letterSpacing: "-0.03em",
+									color: "var(--color-primary)",
+								}}
+							>
+								{stat.value}
+							</div>
+							<div
+								style={{
+									color: "var(--color-text-muted)",
+									fontSize: "0.95rem",
+									letterSpacing: "0.5px",
+								}}
+							>
+								{stat.label}
+							</div>
+						</motion.div>
+					))}
+				</motion.div>
+			</div>
 
-      <style>{`
+			<style>{`
         .stats-container {
           flex-direction: row;
           gap: 0;
@@ -88,6 +102,6 @@ export default function Stats() {
           }
         }
       `}</style>
-    </section>
-  );
+		</section>
+	);
 }
