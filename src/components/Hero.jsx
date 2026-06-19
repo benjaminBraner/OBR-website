@@ -2,7 +2,9 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-import heroBg from "../assets/EDIFICIO KUBOO TOBOROCHI/kubo-prueba-bw.jpg";
+// import heroBg from "../assets/EDIFICIO KUBOO TOBOROCHI/kubo-prueba-bw.jpg";
+// import heroBg from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-new-hero-bw.png";
+import heroBg from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-new-hero-3.png";
 
 export default function Hero() {
 	const sectionRef = useRef(null);
@@ -227,7 +229,7 @@ export default function Hero() {
 							className="btn-outline"
 							id="hero-cta-contact"
 						>
-							Iniciar Proyecto
+							Contáctanos
 						</a>
 					</motion.div>
 				</div>

@@ -7,7 +7,7 @@ const navLinks = [
 	{ label: "Nosotros", href: "#about" },
 	{ label: "Servicios", href: "#services" },
 	{ label: "Proyectos", href: "#projects" },
-	{ label: "Valores", href: "#values" },
+	{ label: "Filosofía", href: "#values" },
 ];
 
 export default function Navbar() {
@@ -91,7 +91,7 @@ export default function Navbar() {
 								display: "flex",
 								alignItems: "center",
 								justifyContent: "center",
-								height: scrolled ? "42px" : "auto",
+								height: scrolled ? "48px" : "auto",
 								background: "transparent",
 								borderRadius: "50%",
 								transition: "all 0.4s ease",
@@ -101,7 +101,7 @@ export default function Navbar() {
 								src={logoSVG}
 								alt="OBR Construcción"
 								style={{
-									height: scrolled ? "28px" : "36px",
+									height: scrolled ? "40px" : "56px",
 									width: "auto",
 									transition: "all 0.4s ease",
 								}}
