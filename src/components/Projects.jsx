@@ -129,8 +129,11 @@ import porticoFontana3 from "../assets/PORTICO LA FONTANA/portico-fontana-3.jpeg
 import porticoFontana4 from "../assets/PORTICO LA FONTANA/portico-fontana-4.jpeg";
 
 /* ─── PISCINA CIUDAD JARDIN ─── */
-import ciudadJardin3 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-3.jpeg";
-import ciudadJardin4 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-4.jpg";
+// import ciudadJardin3 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-3.jpeg";
+import ciudadJardin5 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-5.jpeg";
+import ciudadJardin6 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-6.jpeg";
+import ciudadJardin7 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-7.jpeg";
+// import ciudadJardin4 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-4.jpeg";
 import ciudadJardinConstruccion3 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-3.png";
 import ciudadJardinConstruccion4 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-4.png";
 import ciudadJardinConstruccion7 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-7.jpeg";
@@ -505,7 +508,7 @@ const projects = [
 	{
 		id: 15,
 		status: "terminado",
-		title: "Vivienda Salvatierra",
+		title: "Vivienda J.C.S.",
 		category: "Residencial",
 		image: salvatierraFrontal2,
 		gallery: [
@@ -566,7 +569,7 @@ const projects = [
 	{
 		id: 18,
 		status: "terminado",
-		title: "Laguna Brava",
+		title: "Hacienda Flia P.G.",
 		category: "Residencial",
 		image: lagunaBrava9,
 		gallery: [
@@ -627,18 +630,21 @@ const projects = [
 	},
 	{
 		id: 21,
-		status: "en_desarrollo",
+		status: "terminado",
 		title: "Piscina Ciudad Jardín",
 		category: "Áreas Sociales",
-		image: ciudadJardin3,
+		image: ciudadJardin6,
 		gallery: [
-			ciudadJardin3,
-			ciudadJardin4,
-			ciudadJardinConstruccion3,
-			ciudadJardinConstruccion4,
-			ciudadJardinConstruccion7,
-			ciudadJardinConstruccion8,
-			ciudadJardinConstruccion9,
+			ciudadJardin5,
+			ciudadJardin6,
+			ciudadJardin7,
+			// ciudadJardin3,
+			// ciudadJardin4,
+			// ciudadJardinConstruccion3,
+			// ciudadJardinConstruccion4,
+			// ciudadJardinConstruccion7,
+			// ciudadJardinConstruccion8,
+			// ciudadJardinConstruccion9,
 			ciudadJardinPlano1,
 		],
 		desc: "Piscina comunitaria para urbanización Ciudad Jardín, con diseño moderno y proceso de construcción supervisado con altos estándares.",
