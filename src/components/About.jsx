@@ -69,16 +69,14 @@ export default function About() {
 								marginBottom: "2rem",
 							}}
 						>
-							Fusionamos ingeniería de vanguardia con un
-							diseño arquitectónico altamente versátil. Nos
-							adaptamos a las tendencias actuales y a la
-							visión de cada cliente, dominando estilos que
-							van desde líneas contemporáneas y modernas,
-							hasta arquitectura atemporal, clásica,
-							neocolonial o brutalista. Creamos espacios
-							que no solo cumplen una función estructural,
-							sino que inspiran y elevan el estándar de
-							vida.
+							Fusionamos arquitectura de vanguardia y novedosa con
+							alta calidad de ingeniería. Nos adaptamos a las
+							tendencias actuales y a la visión de cada cliente,
+							con construcciones en varios estilos arquitectónicos
+							como ser: contemporáneo, moderno, atemporal,
+							clásico, neocolonial y brutalista. Creamos espacios
+							que no solo cumplen una función estructural, sino que
+							inspiran y elevan el estándar de vida.
 						</p>
 
 						<div
@@ -210,7 +208,7 @@ export default function About() {
 									lineHeight: 1,
 								}}
 							>
-								17+
+								27+
 							</div>
 							<div
 								style={{

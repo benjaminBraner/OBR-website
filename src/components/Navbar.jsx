@@ -101,7 +101,7 @@ export default function Navbar() {
 								src={logoSVG}
 								alt="OBR Construcción"
 								style={{
-									height: scrolled ? "40px" : "56px",
+									height: scrolled ? "60px" : "80px",
 									width: "auto",
 									transition: "all 0.4s ease",
 								}}

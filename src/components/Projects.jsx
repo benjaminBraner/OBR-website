@@ -115,9 +115,6 @@ import lagunaBrava2 from "../assets/LAGUNA BRAVA/laguna-brava-2.jpeg";
 import lagunaBrava3 from "../assets/LAGUNA BRAVA/laguna-brava-3.jpeg";
 import lagunaBrava4 from "../assets/LAGUNA BRAVA/laguna-brava-4.jpeg";
 import lagunaBrava5 from "../assets/LAGUNA BRAVA/laguna-brava-5.jpeg";
-import lagunaBrava6 from "../assets/LAGUNA BRAVA/laguna-brava-6.jpeg";
-import lagunaBrava7 from "../assets/LAGUNA BRAVA/laguna-brava-7.jpeg";
-import lagunaBrava8 from "../assets/LAGUNA BRAVA/laguna-brava-8.jpeg";
 import lagunaBrava9 from "../assets/LAGUNA BRAVA/laguna-brava-9.jpg";
 import lagunaBrava10 from "../assets/LAGUNA BRAVA/laguna-brava-10.jpg";
 import lagunaBrava11 from "../assets/LAGUNA BRAVA/laguna-brava-11.jpg";
@@ -140,11 +137,6 @@ import ciudadJardinConstruccion7 from "../assets/PISCINA CIUDAD JARDIN/piscina-c
 import ciudadJardinConstruccion8 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-8.jpeg";
 import ciudadJardinConstruccion9 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-9.jpeg";
 import ciudadJardinPlano1 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-plano-1.png";
-
-/* ─── PISCINA EMILENE ─── */
-import piscinaEmilene1 from "../assets/PISCINA EMILENE/piscina-emilene-1.jpeg";
-import piscinaEmilene2 from "../assets/PISCINA EMILENE/piscina-emilene-2.jpeg";
-import piscinaEmilene3 from "../assets/PISCINA EMILENE/piscina-emilene-3.jpeg";
 
 /* ─── LOMAS DE ARENA ─── */
 import lomasArenaFrontal1 from "../assets/LOMAS DE ARENA/lomas-arena-frontal-1.jpeg";
@@ -193,11 +185,11 @@ import autobolCenter1Interior1 from "../assets/GALPON AUTOBOL CENTER 1/galpon-au
 import autobolCenter1Plano1 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-plano-1.png";
 import autobolCenter1Plano2 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-plano-2.jpg";
 
-/* ─── GALPOTON AUTOBOL CENTER 2 ─── */
-import autobolCenter2Frontal1 from "../assets/GALPOTON AUTOBOL CENTER 2/galpon-autobol-center-2-frontal-1.png";
-import autobolCenter2Interior1 from "../assets/GALPOTON AUTOBOL CENTER 2/galpon-autobol-center-2-interior-1.jpg";
-import autobolCenter2Interior2 from "../assets/GALPOTON AUTOBOL CENTER 2/galpon-autobol-center-2-interior-2.jpg";
-import autobolCenter2Plano1 from "../assets/GALPOTON AUTOBOL CENTER 2/galpon-autobol-center-2-plano-1.jpg";
+/* ─── GALPON AUTOBOL CENTER 2 ─── */
+import autobolCenter2Frontal1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-frontal-1.png";
+import autobolCenter2Interior1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-interior-1.jpg";
+import autobolCenter2Interior2 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-interior-2.jpg";
+import autobolCenter2Plano1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-plano-1.jpg";
 
 /* ─── GALPON HONDA ─── */
 import galponHondaFrontal1 from "../assets/GALPON HONDA/galpon-honda-frontal-1.jpeg";
@@ -222,12 +214,12 @@ import visalFrontal2 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-2.jp
 import visalFrontal3 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-3.jpeg";
 import visalFrontal4 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-4.jpeg";
 
-/* ─── PAVIMENTO HONDA ─── */
-import pavimentoHonda1 from "../assets/PAVIMENTO HONDA/pavimento-honda-1.jpeg";
-import pavimentoHonda2 from "../assets/PAVIMENTO HONDA/pavimento-honda-2.jpeg";
-import pavimentoHonda3 from "../assets/PAVIMENTO HONDA/pavimento-honda-3.jpeg";
-import pavimentoHonda4 from "../assets/PAVIMENTO HONDA/pavimento-honda-4.jpeg";
-import pavimentoHonda5 from "../assets/PAVIMENTO HONDA/pavimento-honda-5.jpeg";
+/* ─── PAVIMENTOS ─── */
+import pavimentos1 from "../assets/PAVIMENTOS/pavimentos-1.jpeg";
+import pavimentos2 from "../assets/PAVIMENTOS/pavimentos-2.jpeg";
+import pavimentos3 from "../assets/PAVIMENTOS/pavimentos-3.jpeg";
+import pavimentos4 from "../assets/PAVIMENTOS/pavimentos-4.jpeg";
+import pavimentos5 from "../assets/PAVIMENTOS/pavimentos-5.jpeg";
 
 /* ─── SHOWROOM BMW 3ER ANILLO ─── */
 import showroomBmw3a1 from "../assets/SHOWROOM BMW 3ER ANILLO/showroom-bmw-3a-1.png";
@@ -251,6 +243,12 @@ import showroomLada2 from "../assets/SHOWROOM LADA/showroom-lada-2.jpg";
 import restauranteLagunaBrava1 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-1.jpg";
 import restauranteLagunaBrava2 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-2.jpg";
 import restauranteLagunaBrava3 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-3.jpg";
+import restauranteLagunaBrava4 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-4.jpeg";
+import restauranteLagunaBrava5 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-5.jpeg";
+import restauranteLagunaBrava6 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-6.jpeg";
+import restauranteLagunaBrava7 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-7.jpeg";
+import restauranteLagunaBrava8 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-8.png";
+import restauranteLagunaBrava9 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-9.jpeg";
 import restauranteLagunaBravaPlano1 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-plano-1.png";
 
 /* ─── PASTELERIA MACADAMIA ─── */
@@ -287,6 +285,10 @@ import riverViewFrontal2 from "../assets/EDIFICIO RIVER VIEW/river-view-frontal-
 import piscinaSczColina1 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-1.png";
 import piscinaSczColina2 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-2.png";
 import piscinaSczColina3 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-3.png";
+import piscinaSczColina4 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-4.jpeg";
+import piscinaSczColina5 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-5.jpeg";
+import piscinaSczColina6 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-6.jpeg";
+import piscinaSczColina7 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-7.jpeg";
 import piscinaSczColinaPlano1 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-plano-1.png";
 import piscinaSczColinaPlano2 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-plano-2.png";
 
@@ -353,7 +355,7 @@ const projects = [
 	},
 	{
 		id: 3,
-		status: "terminado",
+		status: "en_desarrollo",
 		title: "Edificio HV",
 		category: "Comercial",
 		image: edificioHV1,
@@ -414,26 +416,23 @@ const projects = [
 	{
 		id: 8,
 		status: "terminado",
-		title: "Restaurante Laguna Brava",
+		title: "Restaurante Hacienda Flia P.G.",
 		category: "Comercial",
-		image: restauranteLagunaBrava1,
+		image: restauranteLagunaBrava8,
 		gallery: [
 			restauranteLagunaBrava1,
 			restauranteLagunaBrava2,
 			restauranteLagunaBrava3,
+			restauranteLagunaBrava4,
+			restauranteLagunaBrava5,
+			restauranteLagunaBrava6,
+			restauranteLagunaBrava7,
+			restauranteLagunaBrava8,
+			restauranteLagunaBrava9,
 			restauranteLagunaBravaPlano1,
 		],
 		desc: "Proyecto de interiorismo y construcción de restaurante con terraza exterior, mobiliario a medida y ambientación cálida.",
 	},
-	// {
-	// 	id: 9,
-	// 	status: "terminado",
-	// 	title: "Stand Mini",
-	// 	category: "Comercial",
-	// 	image: "",
-	// 	gallery: [],
-	// 	desc: "Stand para ferias de la marca Mini, con diseño compacto y elegante que evoca la esencia del modelo.",
-	// },
 	{
 		id: 10,
 		status: "terminado",
@@ -499,7 +498,6 @@ const projects = [
 			ferrufinoInterior6,
 			ferrufinoInterior7,
 			ferrufinoPiscina1,
-			// ferrufinoPiscina2,
 			ferrufinoPiscina3,
 			ferrufinoPiscina4,
 		],
@@ -510,15 +508,14 @@ const projects = [
 		status: "terminado",
 		title: "Vivienda J.C.S.",
 		category: "Residencial",
-		image: salvatierraFrontal2,
+		image: salvatierraFrontal4,
 		gallery: [
-			salvatierraFrontal2,
-			salvatierraFrontal3,
 			salvatierraFrontal4,
 			salvatierraFrontal5,
+			salvatierraFrontal2,
+			salvatierraFrontal3,
 			salvatierraInterior1,
 			salvatierraInterior2,
-			// salvatierraInterior3,
 			salvatierraInterior4,
 			salvatierraInterior5,
 			salvatierraInterior6,
@@ -526,7 +523,6 @@ const projects = [
 			salvatierraInterior9,
 			salvatierraInterior10,
 			salvatierraInterior11,
-			// salvatierraInterior12,
 			salvatierraInterior14,
 			salvatierraInterior15,
 			salvatierraInterior16,
@@ -571,31 +567,19 @@ const projects = [
 		status: "terminado",
 		title: "Hacienda Flia P.G.",
 		category: "Residencial",
-		image: lagunaBrava9,
+		image: lagunaBrava2,
 		gallery: [
-			lagunaBrava9,
 			lagunaBrava2,
+			lagunaBrava9,
 			lagunaBrava1,
 			lagunaBrava3,
 			lagunaBrava4,
 			lagunaBrava5,
-			lagunaBrava6,
-			lagunaBrava7,
-			lagunaBrava8,
 			lagunaBrava10,
 			lagunaBrava11,
 		],
-		desc: "Residencia en zona natural con diseño que integra el entorno, amplias terrazas y espacios que invitan a la contemplación del paisaje.",
+		desc: "Residencia en zona natural con diseño que integra el entorno, amplias galerías y espacios que invitan a la contemplación del paisaje.",
 	},
-	// {
-	// 	id: 19,
-	// 	status: "en_desarrollo",
-	// 	title: "Vivienda Riviera",
-	// 	category: "Residencial",
-	// 	image: "",
-	// 	gallery: [],
-	// 	desc: "Proyecto residencial de categoría con inspiración mediterránea, espacios generosos y propuesta de acabados de alta gama.",
-	// },
 	{
 		id: 33,
 		status: "terminado",
@@ -610,11 +594,11 @@ const projects = [
 		status: "en_desarrollo",
 		title: "Viviendas La Fontana",
 		category: "Residencial",
-		image: viviendasFontana1,
+		image: viviendasFontana3,
 		gallery: [
-			viviendasFontana1,
-			viviendasFontana2,
+			// viviendasFontana1,
 			viviendasFontana3,
+			viviendasFontana2,
 			viviendasFontana4,
 		],
 		desc: "Conjunto de viviendas dentro del condominio La Fontana, con propuesta arquitectónica uniforme y acabados de primera calidad.",
@@ -651,7 +635,7 @@ const projects = [
 	},
 	{
 		id: 35,
-		status: "en_desarrollo",
+		status: "terminado",
 		title: "Piscina SCZ de La Colina",
 		category: "Áreas Sociales",
 		image: piscinaSczColina1,
@@ -659,29 +643,24 @@ const projects = [
 			piscinaSczColina1,
 			piscinaSczColina2,
 			piscinaSczColina3,
+			piscinaSczColina4,
+			piscinaSczColina5,
+			piscinaSczColina6,
+			piscinaSczColina7,
 			piscinaSczColinaPlano1,
 			piscinaSczColinaPlano2,
 		],
 		desc: "Piscina residencial en el condominio SCZ de La Colina, con diseño de alta calidad y planimetría detallada para su correcta ejecución.",
 	},
 	{
-		id: 22,
-		status: "terminado",
-		title: "Piscina E.M.",
-		category: "Áreas Sociales",
-		image: piscinaEmilene1,
-		gallery: [piscinaEmilene1, piscinaEmilene2, piscinaEmilene3],
-		desc: "Piscina residencial privada con acabados de primera calidad, diseño limpio y detalles que aportan elegancia al espacio exterior.",
-	},
-	{
 		id: 23,
 		status: "en_desarrollo",
 		title: "Pórtico La Fontana",
 		category: "Áreas Sociales",
-		image: porticoFontana1,
+		image: porticoFontana2,
 		gallery: [
-			porticoFontana1,
 			porticoFontana2,
+			porticoFontana1,
 			porticoFontana3,
 			porticoFontana4,
 		],
@@ -690,9 +669,9 @@ const projects = [
 	{
 		id: 24,
 		status: "terminado",
-		title: "Lomas de Arena",
+		title: "Casa de Campo J.C.S",
 		category: "Residencial",
-		image: lomasArenaFrontal1,
+		image: lomasArenaFrontal4,
 		gallery: [
 			lomasArenaFrontal1,
 			lomasArenaFrontal2,
@@ -829,7 +808,7 @@ const projects = [
 	{
 		id: 37,
 		status: "terminado",
-		title: "Oficinas Honda",
+		title: "Oficinas Honda Visal",
 		category: "Comercial",
 		image: oficinasHonda1,
 		gallery: [
@@ -861,17 +840,17 @@ const projects = [
 	{
 		id: 32,
 		status: "terminado",
-		title: "Pavimento Honda",
+		title: "Pavimentos",
 		category: "Industrial",
-		image: pavimentoHonda1,
+		image: pavimentos1,
 		gallery: [
-			pavimentoHonda1,
-			pavimentoHonda2,
-			pavimentoHonda3,
-			pavimentoHonda4,
-			pavimentoHonda5,
+			pavimentos1,
+			pavimentos2,
+			pavimentos3,
+			pavimentos4,
+			pavimentos5,
 		],
-		desc: "Pavimentación de alto rendimiento para las instalaciones de Honda, con materiales resistentes al tráfico pesado y acabado uniforme.",
+		desc: "Pavimentación de alto rendimiento con acabados de alta calidad",
 	},
 ];
 
@@ -1005,11 +984,8 @@ function ProjectGalleryModal({ project, onClose }) {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ delay: 0.5, duration: 0.5 }}
+				className="projects-grid"
 				style={{
-					display: "grid",
-					gridTemplateColumns:
-						"repeat(auto-fill, minmax(280px, 1fr))",
-					gap: "1.5rem",
 					maxWidth: "1400px",
 					margin: "0 auto",
 					paddingBottom: "4rem",
@@ -1020,6 +996,7 @@ function ProjectGalleryModal({ project, onClose }) {
 						key={idx}
 						whileHover={{ scale: 1.02, y: -5 }}
 						onClick={() => setCurrentIdx(idx)}
+						className="project-card"
 						style={{
 							cursor: "pointer",
 							borderRadius: "var(--radius-lg)",
@@ -1027,7 +1004,6 @@ function ProjectGalleryModal({ project, onClose }) {
 							boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
 							background: "var(--color-surface-2)",
 							position: "relative",
-							aspectRatio: "4/3",
 						}}
 					>
 						<img
@@ -1036,8 +1012,8 @@ function ProjectGalleryModal({ project, onClose }) {
 							loading="lazy"
 							style={{
 								width: "100%",
-								height: "100%",
-								objectFit: "cover",
+								height: "auto",
+								display: "block",
 								transition: "transform 0.5s ease",
 							}}
 						/>
@@ -1273,6 +1249,7 @@ export default function Projects() {
 			exit={{ opacity: 0, scale: 0.9 }}
 			transition={{ duration: 0.4 }}
 			onClick={() => setLightboxProject(project)}
+			className="project-card"
 			style={{
 				borderRadius: "var(--radius-lg)",
 				overflow: "hidden",
@@ -1296,7 +1273,7 @@ export default function Projects() {
 				if (overlay) overlay.style.opacity = "0";
 			}}
 		>
-			<div style={{ height: "280px", overflow: "hidden" }}>
+			<div style={{ width: "100%", overflow: "hidden", display: "flex" }}>
 				<img
 					className="project-img"
 					src={project.image}
@@ -1304,8 +1281,8 @@ export default function Projects() {
 					loading="lazy"
 					style={{
 						width: "100%",
-						height: "100%",
-						objectFit: "cover",
+						height: "auto",
+						display: "block",
 						transition:
 							"transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)",
 					}}
@@ -1508,10 +1485,6 @@ export default function Projects() {
 								<motion.div
 									layout
 									className="projects-grid"
-									style={{
-										display: "grid",
-										gap: "1.5rem",
-									}}
 								>
 									<AnimatePresence mode="popLayout">
 										{terminados.map(
@@ -1550,10 +1523,6 @@ export default function Projects() {
 								<motion.div
 									layout
 									className="projects-grid"
-									style={{
-										display: "grid",
-										gap: "1.5rem",
-									}}
 								>
 									<AnimatePresence mode="popLayout">
 										{enDesarrollo.map(
@@ -1579,7 +1548,15 @@ export default function Projects() {
 
 			<style>{`
         .projects-grid {
-          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+          column-count: 3;
+          column-gap: 1.5rem;
+          width: 100%;
+        }
+
+        .project-card {
+          break-inside: avoid;
+          margin-bottom: 1.5rem;
+          display: block;
         }
         
         .lightbox-nav-btn.lightbox-prev {
@@ -1589,10 +1566,19 @@ export default function Projects() {
           right: -3rem;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .projects-grid {
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            column-count: 2;
           }
+        }
+        
+        @media (max-width: 640px) {
+          .projects-grid {
+            column-count: 1;
+          }
+        }
+        
+        @media (max-width: 768px) {
           
           .lightbox-nav-btn {
             width: 36px !important;

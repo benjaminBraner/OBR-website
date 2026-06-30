@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const stats = [
-	{ value: "17+", label: "Años de experiencia" },
-	{ value: "50+", label: "Proyectos completados" },
+	{ value: "27+", label: "Años de experiencia" },
+	{ value: "220+", label: "Proyectos completados" },
 	{ value: "100%", label: "Clientes satisfechos" },
 ];
 

@@ -174,7 +174,7 @@ export default function Hero() {
 					>
 						Arquitectura y <br />
 						<span style={{ color: "var(--color-primary)" }}>
-							diseño
+							construcción
 						</span>{" "}
 						de vanguardia
 					</motion.h1>
