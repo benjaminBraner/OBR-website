@@ -528,7 +528,7 @@ const projects = [
 	},
 	{
 		id: 13,
-		status: "en_desarrollo",
+		status: "terminado",
 		title: "La Fontana",
 		category: "Áreas Sociales",
 		image: fontanaPiscina1,
@@ -688,7 +688,7 @@ const projects = [
 	},
 	{
 		id: 23,
-		status: "en_desarrollo",
+		status: "terminado",
 		title: "Pórtico La Fontana",
 		category: "Áreas Sociales",
 		image: porticoFontana2,
