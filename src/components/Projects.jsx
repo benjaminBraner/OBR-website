@@ -358,6 +358,9 @@ const CATEGORIES = [
 	"Comercial",
 	"Áreas Sociales",
 	"Industrial",
+	"Urbanismo",
+	"Interiorismo",
+	"Ganadería",
 ];
 
 /* ─── Project Data ─── */

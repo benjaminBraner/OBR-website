@@ -7,45 +7,68 @@ import {
 	Building2,
 	ArrowUpRight,
 	CheckCircle2,
+	Map,
+	Sofa,
+	Fence,
 } from "lucide-react";
 
 const featuredService = {
 	icon: <LineChart size={40} strokeWidth={1.3} />,
 	title: "Estudio de Mercado",
 	subtitle: "Tu proyecto comienza con datos, no suposiciones",
-	desc: "Desarrollamos análisis exhaustivos del sector inmobiliario y comercial para garantizar la viabilidad y rentabilidad de tu inversión antes de ejecutar un solo peso. Nuestro equipo combina inteligencia de mercado, análisis de demanda, benchmarking competitivo y proyecciones financieras para que tomes decisiones con certeza.",
+	desc: "Desarrollamos análisis exhaustivos del sector inmobiliario y comercial para garantizar la viabilidad y rentabilidad de tu inversión. Para inversionistas que quieran desarrollar proyectos, elaboramos todo el estudio de mercado, te ayudamos con la estrategia de marketing y ventas, y acompañamos el desarrollo de principio a fin — con inteligencia de mercado real, no suposiciones.",
 	highlights: [
 		"Análisis de oferta y demanda",
 		"Benchmarking competitivo",
 		"Proyecciones de rentabilidad",
 		"Segmentación de mercado objetivo",
+		"Estrategia de marketing y ventas",
+		"Plan de desarrollo para inversionistas",
 		"Informe ejecutivo personalizado",
 	],
 };
 
 const services = [
 	{
+		icon: <Map size={32} strokeWidth={1.4} />,
+		title: "Proyectos Urbanísticos",
+		desc: "Desarrollamos tu diseño de urbanización completo hasta el diseño final: vialidades, lotización, redes de servicios, todas las áreas verdes y equipamiento urbano.",
+		tag: "Urbanismo",
+	},
+	{
 		icon: <Home size={32} strokeWidth={1.4} />,
-		title: "Viviendas de Lujo",
-		desc: "Diseño y construcción de residencias de alto nivel con acabados premium y arquitectura vanguardista.",
+		title: "Tipología de Viviendas",
+		desc: "Residencias de lujo y viviendas de interés social: desde el diseño de planos y render 3D hasta la gestión integral de la obra — sistema eléctrico, instalaciones y más.",
 		tag: "Residencial",
+	},
+	{
+		icon: <Sofa size={32} strokeWidth={1.4} />,
+		title: "Diseño de Interiores",
+		desc: "Transformamos espacios con diseño interior a medida: distribución, sistema eléctrico, acabados, mobiliario y ambientación que reflejan tu estilo de vida.",
+		tag: "Interiorismo",
+	},
+	{
+		icon: <Fence size={32} strokeWidth={1.4} />,
+		title: "Sector Ganadería",
+		desc: "Diseñamos proyectos integrales para el sector agropecuario: establos, instalaciones ganaderas, centros de remates y toda la infraestructura de fines pecuarios.",
+		tag: "Ganadería",
+	},
+	{
+		icon: <Building2 size={32} strokeWidth={1.4} />,
+		title: "Edificios Corporativos & Showrooms",
+		desc: "Con más de 20 años de experiencia y una cartera de clientes de primer nivel, diseñamos edificios corporativos y showrooms de alto impacto visual y funcional.",
+		tag: "Comercial",
 	},
 	{
 		icon: <Waves size={32} strokeWidth={1.4} />,
 		title: "Áreas Sociales & Piscinas",
-		desc: "Piscinas, clubhouses y espacios de esparcimiento que elevan el valor y distinción de cada desarrollo.",
+		desc: "Piscinas, clubhouses y espacios de esparcimiento que elevan el valor y distinción de cada desarrollo residencial o condominio.",
 		tag: "Áreas Sociales",
-	},
-	{
-		icon: <Building2 size={32} strokeWidth={1.4} />,
-		title: "Showrooms Corporativos",
-		desc: "Espacios de exposición con diseño de alto impacto visual para marcas que exigen presencia y exclusividad.",
-		tag: "Comercial",
 	},
 	{
 		icon: <Warehouse size={32} strokeWidth={1.4} />,
 		title: "Galpones & Pavimentos",
-		desc: "Obras civiles, pavimentación de urbanizaciones y complejos industriales con la más alta calidad estructural.",
+		desc: "Obras civiles, pavimentación de urbanizaciones y complejos industriales con la más alta calidad estructural y tiempos de entrega garantizados.",
 		tag: "Industrial",
 	},
 ];
@@ -93,9 +116,9 @@ export default function Services({ featuredRef }) {
 							color: "#ffffff",
 						}}
 					>
-						Soluciones integrales de{" "}
+						Nuestras{" "}
 						<span className="gradient-text-primary">
-							construcción
+							especialidades
 						</span>
 					</h2>
 					<p
@@ -293,7 +316,7 @@ export default function Services({ featuredRef }) {
 							viewport={{ once: true, margin: "-40px" }}
 							transition={{
 								duration: 0.5,
-								delay: i * 0.1,
+								delay: i * 0.08,
 							}}
 							className="glass-panel"
 							style={{
