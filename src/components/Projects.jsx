@@ -112,6 +112,8 @@ import fernandaCabreraConst3 from "../assets/VIVIENDA FERNANDA CABRERA/fernanda-
 /* ─── LAGUNA BRAVA ─── */
 import lagunaBrava1 from "../assets/LAGUNA BRAVA/laguna-brava-1.jpeg";
 import lagunaBrava2 from "../assets/LAGUNA BRAVA/laguna-brava-2.jpeg";
+import lagunaBrava1_2 from "../assets/LAGUNA BRAVA/laguna-brava-1-2.png";
+import lagunaBrava2_2 from "../assets/LAGUNA BRAVA/laguna-brava-2-2.png";
 import lagunaBrava3 from "../assets/LAGUNA BRAVA/laguna-brava-3.jpeg";
 import lagunaBrava4 from "../assets/LAGUNA BRAVA/laguna-brava-4.jpeg";
 import lagunaBrava5 from "../assets/LAGUNA BRAVA/laguna-brava-5.jpeg";
@@ -213,6 +215,20 @@ import visalFrontal1 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-1.jp
 import visalFrontal2 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-2.jpeg";
 import visalFrontal3 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-3.jpeg";
 import visalFrontal4 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-4.jpeg";
+import visalFrontal5 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-5.jpeg";
+import visalFrontal6 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-6.jpeg";
+import visalFrontal7 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-7.jpeg";
+import visalFrontal8 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-8.jpeg";
+import visalConstruccion1 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-1.jpeg";
+import visalConstruccion2 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-2.jpeg";
+import visalConstruccion3 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-3.jpeg";
+import visalConstruccion4 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-4.jpeg";
+import visalConstruccion5 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-5.jpeg";
+import visalConstruccion6 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-6.jpeg";
+import visalConstruccion7 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-7.jpeg";
+import visalConstruccion8 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-8.jpeg";
+import visalInterior1 from "../assets/GALPON VISAL 2024/galpon-visal-interior-1.jpeg";
+import visalInterior2 from "../assets/GALPON VISAL 2024/galpon-visal-interior-2.jpeg";
 
 /* ─── PAVIMENTOS ─── */
 import pavimentos1 from "../assets/PAVIMENTOS/pavimentos-1.jpeg";
@@ -220,6 +236,19 @@ import pavimentos2 from "../assets/PAVIMENTOS/pavimentos-2.jpeg";
 import pavimentos3 from "../assets/PAVIMENTOS/pavimentos-3.jpeg";
 import pavimentos4 from "../assets/PAVIMENTOS/pavimentos-4.jpeg";
 import pavimentos5 from "../assets/PAVIMENTOS/pavimentos-5.jpeg";
+import pavimentos6 from "../assets/PAVIMENTOS/pavimentos-6.jpeg";
+import pavimentos7 from "../assets/PAVIMENTOS/pavimentos-7.jpeg";
+import pavimentos8 from "../assets/PAVIMENTOS/pavimentos-8.jpeg";
+import pavimentos9 from "../assets/PAVIMENTOS/pavimentos-9.jpeg";
+import pavimentos10 from "../assets/PAVIMENTOS/pavimentos-10.jpeg";
+import pavimentos11 from "../assets/PAVIMENTOS/pavimentos-11.jpeg";
+import pavimentos12 from "../assets/PAVIMENTOS/pavimentos-12.jpeg";
+import pavimentos13 from "../assets/PAVIMENTOS/pavimentos-13.jpeg";
+import pavimentos14 from "../assets/PAVIMENTOS/pavimentos-14.jpeg";
+import pavimentos15 from "../assets/PAVIMENTOS/pavimentos-15.jpeg";
+import pavimentos16 from "../assets/PAVIMENTOS/pavimentos-16.jpeg";
+import pavimentos17 from "../assets/PAVIMENTOS/pavimentos-17.jpeg";
+import pavimentos18 from "../assets/PAVIMENTOS/pavimentos-18.jpeg";
 
 /* ─── SHOWROOM BMW 3ER ANILLO ─── */
 import showroomBmw3a1 from "../assets/SHOWROOM BMW 3ER ANILLO/showroom-bmw-3a-1.png";
@@ -567,11 +596,11 @@ const projects = [
 		status: "terminado",
 		title: "Hacienda Flia P.G.",
 		category: "Residencial",
-		image: lagunaBrava2,
+		image: lagunaBrava2_2,
 		gallery: [
-			lagunaBrava2,
+			lagunaBrava2_2,
 			lagunaBrava9,
-			lagunaBrava1,
+			lagunaBrava1_2,
 			lagunaBrava3,
 			lagunaBrava4,
 			lagunaBrava5,
@@ -732,6 +761,11 @@ const projects = [
 			autobol4Frontal1, 
 			autobol4Frontal2, 
 			autobol4Frontal3,
+			autobol3Interior1,
+			autobol3Interior2,
+			autobolCenter1Interior1,
+			autobolCenter2Interior1,
+			autobolCenter2Interior2,
 			autobol4Plano1,
 			autobol4Plano2,
 			autobol4Plano3,
@@ -748,6 +782,8 @@ const projects = [
 			autobolCenter1Frontal1, 
 			autobolCenter1Frontal2,
 			autobolCenter1Interior1,
+			autobol3Interior1,
+			autobolCenter2Interior1,
 			autobolCenter1Plano1,
 			autobolCenter1Plano2,
 		],
@@ -800,6 +836,11 @@ const projects = [
 		image: galponHondaUsadosFrontal1,
 		gallery: [
 			galponHondaUsadosFrontal1,
+			galponHondaInterior1,
+			galponHondaInterior2,
+			galponHondaInterior3,
+			galponHondaInterior4,
+			galponHondaInterior5,
 			galponHondaUsadosPlano1,
 			galponHondaUsadosPlano2,
 		],
@@ -834,7 +875,26 @@ const projects = [
 		title: "Galpón Visal 2024",
 		category: "Industrial",
 		image: visalFrontal1,
-		gallery: [visalFrontal1, visalFrontal2, visalFrontal3, visalFrontal4],
+		gallery: [
+			visalFrontal1,
+			visalFrontal2,
+			visalFrontal3,
+			visalFrontal4,
+			visalFrontal5,
+			visalFrontal6,
+			visalFrontal7,
+			visalFrontal8,
+			visalConstruccion1,
+			visalConstruccion2,
+			visalConstruccion3,
+			visalConstruccion4,
+			visalConstruccion5,
+			visalConstruccion6,
+			visalConstruccion7,
+			visalConstruccion8,
+			visalInterior1,
+			visalInterior2,
+		],
 		desc: "Construcción industrial para Visal 2024 con estándares modernos de calidad, estructura eficiente y acabados duraderos.",
 	},
 	{
@@ -849,6 +909,19 @@ const projects = [
 			pavimentos3,
 			pavimentos4,
 			pavimentos5,
+			pavimentos6,
+			pavimentos7,
+			pavimentos8,
+			pavimentos9,
+			pavimentos10,
+			pavimentos11,
+			pavimentos12,
+			pavimentos13,
+			pavimentos14,
+			pavimentos15,
+			pavimentos16,
+			pavimentos17,
+			pavimentos18,
 		],
 		desc: "Pavimentación de alto rendimiento con acabados de alta calidad",
 	},
