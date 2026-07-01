@@ -15,9 +15,12 @@ import WhatsAppButton from "./components/WhatsAppButton";
 function App() {
 	const [showWsp, setShowWsp] = useState(false);
 	const [isModalOpen, setIsModalOpen] = useState(false);
-	const servicesTriggerRef = useRef(null);
-	const isDark = useInView(servicesTriggerRef, {
-		margin: "0px 0px 200px 0px",
+	const servicesSectionRef = useRef(null);
+	const isDark = useInView(servicesSectionRef, {
+		// "top right bottom left"
+		// top  negative → vuelve blanco antes al salir hacia Projects
+		// bottom 0px   → vuelve negro solo cuando la sección entra de verdad (no antes)
+		margin: "-300px 0px -500px 0px",
 	});
 
 	useEffect(() => {
@@ -92,11 +95,19 @@ function App() {
 						"--featured-right-bg": isDark
 							? "rgba(255, 255, 255,0.03)"
 							: "rgba(0, 0, 0,0.015)",
+						"--color-surface": isDark ? "#111111" : "#fafafa",
+						"--color-surface-2": isDark
+							? "rgba(255,255,255,0.06)"
+							: "#f4f4f5",
+						"--bento-hover-bg": isDark
+							? "rgba(255,255,255,0.05)"
+							: "#efefef",
+						"--color-surface-alt": isDark ? "#1a1a1a" : "#ebebeb",
 					}}
 					transition={{ duration: 0.7, ease: "easeInOut" }}
 				>
 					<About />
-					<Services featuredRef={servicesTriggerRef} />
+					<Services sectionRef={servicesSectionRef} />
 					<Projects />
 				</motion.div>
 				<Values />

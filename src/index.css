@@ -32,6 +32,15 @@
 	--transition-fast: 0.2s var(--ease-in-out);
 	--transition-normal: 0.35s var(--ease-out);
 	--transition-slow: 0.6s var(--ease-out);
+
+	/* ─── Component tokens ─── */
+	--featured-bg: var(--color-surface);
+	--featured-right-bg: var(--color-surface-2);
+	--icon-bg: var(--color-surface-2);
+	--icon-bg-featured: var(--color-surface-2);
+	--color-text-adaptive: var(--color-text-main);
+	--bento-hover-bg: var(--color-surface-2);
+	--color-surface-alt: #0f0f0f;
 }
 
 /* ─── Reset ─── */
