@@ -100,7 +100,21 @@ import aracelySalvatierraConstruccion1 from "../assets/VIVIENDA ARACELY SALVATIE
 import aracelySalvatierraConstruccion2 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-2.png";
 import aracelySalvatierraConstruccion3 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-3.jpeg";
 import aracelySalvatierraConstruccion4 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-4.jpeg";
-
+import aracelySalvatierraConstruccion5 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-5.jpeg";
+import aracelySalvatierraConstruccion6 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-6.jpeg";
+import aracelySalvatierraConstruccion7 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-7.jpeg";
+import aracelySalvatierraConstruccion8 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-8.jpeg";
+import aracelySalvatierraConstruccion9 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-9.jpeg";
+import aracelySalvatierraConstruccion10 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-10.png";
+import aracelySalvatierraConstruccion11 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-11.jpeg";
+import aracelySalvatierraConstruccion12 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-12.jpeg";
+import aracelySalvatierraConstruccion13 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-13.jpeg";
+import aracelySalvatierraConstruccion17 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-17.jpeg";
+import aracelySalvatierraConstruccion18 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-18.jpeg";
+import aracelySalvatierraConstruccion19 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-19.jpeg";
+import aracelySalvatierraConstruccion20 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-20.jpeg";
+import aracelySalvatierraConstruccion21 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-21.jpeg";
+import aracelySalvatierraConstruccion22 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-construccion-22.jpeg";
 /* ─── VIVIENDA FERNANDA CABRERA ─── */
 import fernandaCabreraFrontal1 from "../assets/VIVIENDA FERNANDA CABRERA/fernanda-cabrera-frontal-1.png";
 import fernandaCabreraFrontal2 from "../assets/VIVIENDA FERNANDA CABRERA/fernanda-cabrera-frontal-2.png";
@@ -572,6 +586,21 @@ const projects = [
 			aracelySalvatierraConstruccion2,
 			aracelySalvatierraConstruccion3,
 			aracelySalvatierraConstruccion4,
+			aracelySalvatierraConstruccion5,
+			aracelySalvatierraConstruccion6,
+			aracelySalvatierraConstruccion7,
+			aracelySalvatierraConstruccion8,
+			aracelySalvatierraConstruccion9,
+			aracelySalvatierraConstruccion10,
+			aracelySalvatierraConstruccion11,
+			aracelySalvatierraConstruccion12,
+			aracelySalvatierraConstruccion13,
+			aracelySalvatierraConstruccion17,
+			aracelySalvatierraConstruccion18,
+			aracelySalvatierraConstruccion19,
+			aracelySalvatierraConstruccion20,
+			aracelySalvatierraConstruccion21,
+			aracelySalvatierraConstruccion22,
 		],
 		desc: "Proyecto residencial en construcción con enfoque en espacios abiertos, luz natural y una propuesta arquitectónica moderna.",
 	},
