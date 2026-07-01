@@ -298,7 +298,7 @@ import restauranteLagunaBrava9 from "../assets/RESTAURANTE LAGUNA BRAVA/restaura
 import restauranteLagunaBravaPlano1 from "../assets/RESTAURANTE LAGUNA BRAVA/restaurante-laguna-brava-plano-1.png";
 
 /* ─── PASTELERIA MACADAMIA ─── */
-import macadamia1 from "../assets/PASTELERIA MACADAMIA/pasteleria-macadamia-1.jpg";
+import macadamia1 from "../assets/PASTELERIA MACADAMIA/pasteleria-macadamia-1.png";
 import macadamia2 from "../assets/PASTELERIA MACADAMIA/pasteleria-macadamia-2.jpg";
 import macadamia3 from "../assets/PASTELERIA MACADAMIA/pasteleria-macadamia-3.jpg";
 
@@ -940,11 +940,11 @@ const projects = [
 		image: galponHondaUsadosFrontal1,
 		gallery: [
 			galponHondaUsadosFrontal1,
-			galponHondaInterior1,
-			galponHondaInterior2,
-			galponHondaInterior3,
-			galponHondaInterior4,
-			galponHondaInterior5,
+			// galponHondaInterior1,
+			// galponHondaInterior2,
+			// galponHondaInterior3,
+			// galponHondaInterior4,
+			// galponHondaInterior5,
 			galponHondaUsadosPlano1,
 			galponHondaUsadosPlano2,
 		],

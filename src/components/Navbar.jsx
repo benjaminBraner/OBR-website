@@ -39,7 +39,7 @@ export default function Navbar() {
 					left: 0,
 					right: 0,
 					zIndex: 100,
-					padding: scrolled ? "0.75rem 1.25rem" : "0",
+					padding: 0,
 					transition:
 						"padding 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
 					pointerEvents: "none",
@@ -48,21 +48,21 @@ export default function Navbar() {
 				<div
 					style={{
 						width: "100%",
-						maxWidth: scrolled ? "1250px" : "100%",
+						maxWidth: "100%",
 						margin: "0 auto",
 						background: scrolled
-							? "rgba(255, 255, 255, 0.9)"
+							? "rgba(255, 255, 255, 0.95)"
 							: "transparent",
 						backdropFilter: scrolled ? "blur(20px)" : "none",
 						WebkitBackdropFilter: scrolled
 							? "blur(20px)"
 							: "none",
-						borderRadius: scrolled ? "100px" : "0",
-						borderBottom: !scrolled
-							? "1px solid rgba(0, 0, 0,0.04)"
-							: "1px solid transparent",
+						borderRadius: "0",
+						borderBottom: scrolled
+							? "1px solid rgba(0, 0, 0, 0.08)"
+							: "1px solid rgba(0, 0, 0, 0.04)",
 						boxShadow: scrolled
-							? "0 10px 40px rgba(0,0,0,0.08)"
+							? "0 4px 20px rgba(0,0,0,0.05)"
 							: "none",
 						transition: "all 0.4s ease",
 						pointerEvents: "auto",
@@ -76,8 +76,8 @@ export default function Navbar() {
 							justifyContent: "space-between",
 							alignItems: "center",
 							padding: scrolled
-								? "0.5rem 1rem"
-								: "1.25rem 2rem",
+								? "0.25rem 2rem"
+								: "0.5rem 2rem", // Reduced padding so navbar stays thin
 							transition: "padding 0.4s ease",
 							width: "100%",
 							maxWidth: "1240px",
@@ -90,10 +90,7 @@ export default function Navbar() {
 							style={{
 								display: "flex",
 								alignItems: "center",
-								justifyContent: "center",
-								height: scrolled ? "48px" : "auto",
-								background: "transparent",
-								borderRadius: "50%",
+								height: "auto",
 								transition: "all 0.4s ease",
 							}}
 						>
@@ -101,7 +98,7 @@ export default function Navbar() {
 								src={logoSVG}
 								alt="OBR Construcción"
 								style={{
-									height: scrolled ? "60px" : "80px",
+									height: scrolled ? "75px" : "100px", // Larger logo
 									width: "auto",
 									transition: "all 0.4s ease",
 								}}
