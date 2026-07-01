@@ -18,6 +18,9 @@ import kubooInteriorArbol4 from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-interi
 import kubooTerraza3 from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-terraza-3.jpeg";
 import kubooTerrazaPiscina1 from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-terraza-piscina-1.jpeg";
 import kubooTerrazaPiscina2 from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-terraza-piscina-2.jpeg";
+// Planos kuboo
+import kubooPlano1 from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-plano-1.jpeg";
+import kubooPlano2 from "../assets/EDIFICIO KUBOO TOBOROCHI/kuboo-plano-2.jpeg";
 
 /* ─── EDIFICIO HV ─── */
 import edificioHV1 from "../assets/EDIFICIO HV/edificio-HV-1.jpeg";
@@ -323,6 +326,7 @@ import galponHondaUsadosPlano2 from "../assets/GALPON HONDA AUTOS USADOS/galpon-
 /* ─── EDIFICIO RIVER VIEW ─── */
 import riverViewFrontal1 from "../assets/EDIFICIO RIVER VIEW/river-view-frontal-1.jpg";
 import riverViewFrontal2 from "../assets/EDIFICIO RIVER VIEW/river-view-frontal-2.jpg";
+import riverViewPlano1 from "../assets/EDIFICIO RIVER VIEW/river-view-plano-1.png";
 
 /* ─── PISCINA SCZ DE LA COLINA ─── */
 import piscinaSczColina1 from "../assets/PISCINA SCZ DE LA COLINA/piscina-scz-colina-1.png";
@@ -369,6 +373,8 @@ const projects = [
 			kubooFrontal9,
 			kuboPruebaBw,
 			kubooInterior2,
+			kubooPlano1,
+			kubooPlano2,
 			kubooInterior3,
 			kubooInterior4,
 			kubooInteriorArbol1,
@@ -475,6 +481,15 @@ const projects = [
 			restauranteLagunaBravaPlano1,
 		],
 		desc: "Proyecto de interiorismo y construcción de restaurante con terraza exterior, mobiliario a medida y ambientación cálida.",
+	},
+	{
+		id: 9,
+		status: "terminado",
+		title: "Stands Expocruz",
+		category: "Comercial",
+		image: "",
+		gallery: [],
+		desc: "",
 	},
 	{
 		id: 10,
@@ -639,35 +654,12 @@ const projects = [
 		desc: "Residencia en zona natural con diseño que integra el entorno, amplias galerías y espacios que invitan a la contemplación del paisaje.",
 	},
 	{
-		id: 33,
-		status: "terminado",
-		title: "Vivienda M.F.C.",
-		category: "Residencial",
-		image: mfcFrontal1,
-		gallery: [mfcFrontal1, mfcFrontal2, mfcInterior1, mfcInterior2],
-		desc: "Vivienda residencial con diseño contemporáneo de dos volúmenes, interiores de alto nivel y espacios bien definidos.",
-	},
-	{
-		id: 34,
-		status: "en_desarrollo",
-		title: "Viviendas La Fontana",
-		category: "Residencial",
-		image: viviendasFontana3,
-		gallery: [
-			// viviendasFontana1,
-			viviendasFontana3,
-			viviendasFontana2,
-			viviendasFontana4,
-		],
-		desc: "Conjunto de viviendas dentro del condominio La Fontana, con propuesta arquitectónica uniforme y acabados de primera calidad.",
-	},
-	{
 		id: 20,
 		status: "en_desarrollo",
 		title: "Edificio River View",
 		category: "Residencial",
 		image: riverViewFrontal1,
-		gallery: [riverViewFrontal1, riverViewFrontal2],
+		gallery: [riverViewFrontal1, riverViewFrontal2, riverViewPlano1],
 		desc: "Edificio residencial en desarrollo con vistas privilegiadas, diseño contemporáneo y unidades con acabados de primera.",
 	},
 	{
@@ -690,25 +682,6 @@ const projects = [
 			ciudadJardinPlano1,
 		],
 		desc: "Piscina comunitaria para urbanización Ciudad Jardín, con diseño moderno y proceso de construcción supervisado con altos estándares.",
-	},
-	{
-		id: 35,
-		status: "terminado",
-		title: "Piscina SCZ de La Colina",
-		category: "Áreas Sociales",
-		image: piscinaSczColina1,
-		gallery: [
-			piscinaSczColina1,
-			piscinaSczColina2,
-			piscinaSczColina3,
-			piscinaSczColina4,
-			piscinaSczColina5,
-			piscinaSczColina6,
-			piscinaSczColina7,
-			piscinaSczColinaPlano1,
-			piscinaSczColinaPlano2,
-		],
-		desc: "Piscina residencial en el condominio SCZ de La Colina, con diseño de alta calidad y planimetría detallada para su correcta ejecución.",
 	},
 	{
 		id: 23,
@@ -858,47 +831,6 @@ const projects = [
 		desc: "Galpón corporativo para operaciones de Honda, con interiores de alta especificación y fachada institucional alineada a la imagen de marca.",
 	},
 	{
-		id: 36,
-		status: "terminado",
-		title: "Galpón Honda Autos Usados",
-		category: "Industrial",
-		image: galponHondaUsadosFrontal1,
-		gallery: [
-			galponHondaUsadosFrontal1,
-			galponHondaInterior1,
-			galponHondaInterior2,
-			galponHondaInterior3,
-			galponHondaInterior4,
-			galponHondaInterior5,
-			galponHondaUsadosPlano1,
-			galponHondaUsadosPlano2,
-		],
-		desc: "Galpón destinado al área de vehículos usados de Honda, con infraestructura planificada para exhibición y gestión eficiente del inventario.",
-	},
-	{
-		id: 37,
-		status: "terminado",
-		title: "Oficinas Honda Visal",
-		category: "Comercial",
-		image: oficinasHonda1,
-		gallery: [
-			oficinasHonda1,
-			oficinasHonda2,
-			oficinasHonda3,
-			oficinasHonda4,
-		],
-		desc: "Diseño y construcción de oficinas corporativas para Honda, con ambientes funcionales y acabados acordes a la imagen de la marca.",
-	},
-	{
-		id: 38,
-		status: "terminado",
-		title: "Showroom Hero",
-		category: "Comercial",
-		image: showroomHero1,
-		gallery: [showroomHero1, showroomHero2],
-		desc: "Showroom de exposición para la marca Hero, con diseño dinámico e iluminación destacada para la presentación de motocicletas.",
-	},
-	{
 		id: 31,
 		status: "terminado",
 		title: "Galpón Visal 2024",
@@ -954,6 +886,91 @@ const projects = [
 		],
 		desc: "Pavimentación de alto rendimiento con acabados de alta calidad",
 	},
+		{
+		id: 33,
+		status: "terminado",
+		title: "Vivienda M.F.C.",
+		category: "Residencial",
+		image: mfcFrontal1,
+		gallery: [mfcFrontal1, mfcFrontal2, mfcInterior1, mfcInterior2],
+		desc: "Vivienda residencial con diseño contemporáneo de dos volúmenes, interiores de alto nivel y espacios bien definidos.",
+	},
+	{
+		id: 34,
+		status: "en_desarrollo",
+		title: "Viviendas La Fontana",
+		category: "Residencial",
+		image: viviendasFontana3,
+		gallery: [
+			// viviendasFontana1,
+			viviendasFontana3,
+			viviendasFontana2,
+			viviendasFontana4,
+		],
+		desc: "Conjunto de viviendas dentro del condominio La Fontana, con propuesta arquitectónica uniforme y acabados de primera calidad.",
+	},
+	{
+		id: 35,
+		status: "terminado",
+		title: "Piscina SCZ de La Colina",
+		category: "Áreas Sociales",
+		image: piscinaSczColina1,
+		gallery: [
+			piscinaSczColina1,
+			piscinaSczColina2,
+			piscinaSczColina3,
+			piscinaSczColina4,
+			piscinaSczColina5,
+			piscinaSczColina6,
+			piscinaSczColina7,
+			piscinaSczColinaPlano1,
+			piscinaSczColinaPlano2,
+		],
+		desc: "Piscina residencial en el condominio SCZ de La Colina, con diseño de alta calidad y planimetría detallada para su correcta ejecución.",
+	},
+	
+	{
+		id: 36,
+		status: "terminado",
+		title: "Galpón Honda Autos Usados",
+		category: "Industrial",
+		image: galponHondaUsadosFrontal1,
+		gallery: [
+			galponHondaUsadosFrontal1,
+			galponHondaInterior1,
+			galponHondaInterior2,
+			galponHondaInterior3,
+			galponHondaInterior4,
+			galponHondaInterior5,
+			galponHondaUsadosPlano1,
+			galponHondaUsadosPlano2,
+		],
+		desc: "Galpón destinado al área de vehículos usados de Honda, con infraestructura planificada para exhibición y gestión eficiente del inventario.",
+	},
+	{
+		id: 37,
+		status: "terminado",
+		title: "Oficinas Honda Visal",
+		category: "Comercial",
+		image: oficinasHonda1,
+		gallery: [
+			oficinasHonda1,
+			oficinasHonda2,
+			oficinasHonda3,
+			oficinasHonda4,
+		],
+		desc: "Diseño y construcción de oficinas corporativas para Honda, con ambientes funcionales y acabados acordes a la imagen de la marca.",
+	},
+	{
+		id: 38,
+		status: "terminado",
+		title: "Showroom Hero",
+		category: "Comercial",
+		image: showroomHero1,
+		gallery: [showroomHero1, showroomHero2],
+		desc: "Showroom de exposición para la marca Hero, con diseño dinámico e iluminación destacada para la presentación de motocicletas.",
+	},
+	
 ];
 
 /* ─── Project Gallery Modal ─── */
@@ -1459,7 +1476,7 @@ export default function Projects() {
 						lineHeight: 1.5,
 					}}
 				>
-					{project.desc}
+					{/* {project.desc} */}
 				</p>
 				<div
 					style={{
