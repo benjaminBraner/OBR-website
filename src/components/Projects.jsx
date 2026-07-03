@@ -36,7 +36,9 @@ import ktmInterior2 from "../assets/SHOWRROM KTM/ktm-interior-2.png";
 import ktmInterior3 from "../assets/SHOWRROM KTM/ktm-interior-3.png";
 import ktmInterior4 from "../assets/SHOWRROM KTM/ktm-interior-4.jpg";
 import ktmInterior5 from "../assets/SHOWRROM KTM/ktm-interior-5.jpg";
-import ktmPlano1 from "../assets/SHOWRROM KTM/ktm-plano-1.jpg";
+import ktmPlano1 from "../assets/SHOWRROM KTM/ktm-plano-1.jpeg";
+import ktmPlano2 from "../assets/SHOWRROM KTM/ktm-plano-2.jpeg";
+import ktmPlano3 from "../assets/SHOWRROM KTM/ktm-plano-3.jpeg";
 
 /* ─── STAND HONDA ─── */
 import hondaFrontal1 from "../assets/STAND HONDA/honda-frontal-1.jpeg";
@@ -71,7 +73,6 @@ import ferrufinoInterior6 from "../assets/VIVIENDA FERRUFINO/ferrufino-interior-
 import ferrufinoInterior7 from "../assets/VIVIENDA FERRUFINO/ferrufino-interior-7.jpeg";
 // Piscina vivienda ferrufino
 import ferrufinoPiscina1 from "../assets/VIVIENDA FERRUFINO/ferrufino-piscina-1.jpeg";
-import ferrufinoPiscina2 from "../assets/VIVIENDA FERRUFINO/ferrufino-piscina-2.jpeg";
 import ferrufinoPiscina3 from "../assets/VIVIENDA FERRUFINO/ferrufino-piscina-3.jpeg";
 import ferrufinoPiscina4 from "../assets/VIVIENDA FERRUFINO/ferrufino-piscina-4.jpeg";
 
@@ -82,7 +83,6 @@ import salvatierraFrontal4 from "../assets/VIVIENDA SALVATIERRA/salvatierra-fron
 import salvatierraFrontal5 from "../assets/VIVIENDA SALVATIERRA/salvatierra-frontal-5.jpg";
 import salvatierraInterior1 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-1.jpeg";
 import salvatierraInterior2 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-2.jpeg";
-import salvatierraInterior3 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-3.jpeg";
 import salvatierraInterior4 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-4.jpeg";
 import salvatierraInterior5 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-5.jpeg";
 import salvatierraInterior6 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-6.jpeg";
@@ -90,12 +90,13 @@ import salvatierraInterior7 from "../assets/VIVIENDA SALVATIERRA/salvatierra-int
 import salvatierraInterior9 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-9.jpeg";
 import salvatierraInterior10 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-10.jpeg";
 import salvatierraInterior11 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-11.jpeg";
-import salvatierraInterior12 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-12.jpeg";
 import salvatierraInterior14 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-14.jpeg";
 import salvatierraInterior15 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-15.jpg";
 import salvatierraInterior16 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-16.jpg";
 import salvatierraInterior17 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-17.jpg";
 import salvatierraInterior18 from "../assets/VIVIENDA SALVATIERRA/salvatierra-interior-18.jpg";
+import salvatierraPlano1 from "../assets/VIVIENDA SALVATIERRA/salvatierra-plano-1.jpeg";
+import salvatierraPlano2 from "../assets/VIVIENDA SALVATIERRA/salvatierra-plano-2.jpeg";
 
 /* ─── VIVIENDA ARACELY SALVATIERRA ─── */
 import aracelySalvatierraFrontal1 from "../assets/VIVIENDA ARACELY SALVATIERRA/aracely-salvatierra-frontal-1.png";
@@ -127,8 +128,6 @@ import fernandaCabreraConst2 from "../assets/VIVIENDA FERNANDA CABRERA/fernanda-
 import fernandaCabreraConst3 from "../assets/VIVIENDA FERNANDA CABRERA/fernanda-cabrera-construccion-3.jpg";
 
 /* ─── LAGUNA BRAVA ─── */
-import lagunaBrava1 from "../assets/LAGUNA BRAVA/laguna-brava-1.jpeg";
-import lagunaBrava2 from "../assets/LAGUNA BRAVA/laguna-brava-2.jpeg";
 import lagunaBrava1_2 from "../assets/LAGUNA BRAVA/laguna-brava-1-2.png";
 import lagunaBrava2_2 from "../assets/LAGUNA BRAVA/laguna-brava-2-2.png";
 import lagunaBrava3 from "../assets/LAGUNA BRAVA/laguna-brava-3.jpeg";
@@ -145,16 +144,9 @@ import porticoFontana3 from "../assets/PORTICO LA FONTANA/portico-fontana-3.jpeg
 import porticoFontana4 from "../assets/PORTICO LA FONTANA/portico-fontana-4.jpeg";
 
 /* ─── PISCINA CIUDAD JARDIN ─── */
-// import ciudadJardin3 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-3.jpeg";
 import ciudadJardin5 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-5.jpeg";
 import ciudadJardin6 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-6.jpeg";
 import ciudadJardin7 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-7.jpeg";
-// import ciudadJardin4 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-4.jpeg";
-import ciudadJardinConstruccion3 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-3.png";
-import ciudadJardinConstruccion4 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-4.png";
-import ciudadJardinConstruccion7 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-7.jpeg";
-import ciudadJardinConstruccion8 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-8.jpeg";
-import ciudadJardinConstruccion9 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-construccion-9.jpeg";
 import ciudadJardinPlano1 from "../assets/PISCINA CIUDAD JARDIN/piscina-ciudad-jardin-plano-1.png";
 
 /* ─── LOMAS DE ARENA ─── */
@@ -165,8 +157,6 @@ import lomasArenaFrontal4 from "../assets/LOMAS DE ARENA/lomas-arena-frontal-4.j
 import lomasArenaExterior1 from "../assets/LOMAS DE ARENA/lomas-arena-exterior-1.jpg";
 import lomasArenaInterior1 from "../assets/LOMAS DE ARENA/lomas-arena-interior-1.jpg";
 import lomasArenaInterior2 from "../assets/LOMAS DE ARENA/lomas-arena-interior-2.jpg";
-import lomasArenaPiscina1 from "../assets/LOMAS DE ARENA/lomas-arena-piscina-1.jpeg";
-import lomasArenaPiscina2 from "../assets/LOMAS DE ARENA/lomas-arena-piscina-2.jpeg";
 
 /* ─── REMODELACION LAS PALMAS ─── */
 import lasPalmasFrontal1 from "../assets/REMODELACION LAS PALMAS/remodelacion-las-palmas-frontal-1.jpeg";
@@ -187,7 +177,7 @@ import autobolFrontal4 from "../assets/GALPON AUTOBOL 3/galpon-autobol-3-frontal
 import autobol3Interior1 from "../assets/GALPON AUTOBOL 3/galpon-autobol-3-interior-1.jpg";
 import autobol3Interior2 from "../assets/GALPON AUTOBOL 3/galpon-autobol-3-interior-2.jpg";
 import autobol3Plano1 from "../assets/GALPON AUTOBOL 3/galpon-autobol-3-plano-1.png";
-import autobol3Plano2 from "../assets/GALPON AUTOBOL 3/galpon-autobol-3-plano-2.jpg";
+import autobol3Plano3 from "../assets/GALPON AUTOBOL 3/galpon-autobol-3-plano-3.jpeg";
 
 /* ─── GALPON AUTOBOL 4 ─── */
 import autobol4Frontal1 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-frontal-1.jpeg";
@@ -196,19 +186,22 @@ import autobol4Frontal3 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-fronta
 import autobol4Plano1 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-plano-1.png";
 import autobol4Plano2 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-plano-2.png";
 import autobol4Plano3 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-plano-3.png";
+import autobol4Plano4 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-plano-4.jpeg";
+import autobol4Plano5 from "../assets/GALPON AUTOBOL 4/galpon-autobol-4-plano-5.jpeg";
 
 /* ─── GALPON AUTOBOL CENTER 1 ─── */
 import autobolCenter1Frontal1 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-frontal-1.png";
 import autobolCenter1Frontal2 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-frontal-2.jpeg";
 import autobolCenter1Interior1 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-interior-1.jpg";
-import autobolCenter1Plano1 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-plano-1.png";
-import autobolCenter1Plano2 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-plano-2.jpg";
+import autobolCenter1Plano1 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-plano-1.jpeg";
+import autobolCenter1Plano3 from "../assets/GALPON AUTOBOL CENTER 1/galpon-autobol-center-1-plano-3.jpeg";
 
 /* ─── GALPON AUTOBOL CENTER 2 ─── */
 import autobolCenter2Frontal1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-frontal-1.png";
 import autobolCenter2Interior1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-interior-1.jpg";
 import autobolCenter2Interior2 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-interior-2.jpg";
-import autobolCenter2Plano1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-plano-1.jpg";
+import autobolCenter2Plano1 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-plano-1.jpeg";
+import autobolCenter2Plano2 from "../assets/GALPON AUTOBOL CENTER 2/galpon-autobol-center-2-plano-2.jpeg";
 
 /* ─── GALPON HONDA ─── */
 import galponHondaFrontal1 from "../assets/GALPON HONDA/galpon-honda-frontal-1.jpeg";
@@ -225,7 +218,8 @@ import galponHondaInterior6 from "../assets/GALPON HONDA/galpon-honda-interior-6
 import galponHondaInterior7 from "../assets/GALPON HONDA/galpon-honda-interior-7.jpeg";
 import galponHondaInterior8 from "../assets/GALPON HONDA/galpon-honda-interior-8.jpg";
 import galponHondaInterior9 from "../assets/GALPON HONDA/galpon-honda-interior-9.jpg";
-import galponHondaPlano1 from "../assets/GALPON HONDA/galpon-honda-plano-1.png";
+import galponHondaPlano1 from "../assets/GALPON HONDA/galpon-honda-plano-1.jpeg";
+import galponHondaPlano2 from "../assets/GALPON HONDA/galpon-honda-plano-2.jpeg";
 
 /* ─── GALPON VISAL 2024 ─── */
 import visalFrontal1 from "../assets/GALPON VISAL 2024/galpon-visal-frontal-1.jpeg";
@@ -246,6 +240,7 @@ import visalConstruccion7 from "../assets/GALPON VISAL 2024/galpon-visal-constru
 import visalConstruccion8 from "../assets/GALPON VISAL 2024/galpon-visal-construccion-8.jpeg";
 import visalInterior1 from "../assets/GALPON VISAL 2024/galpon-visal-interior-1.jpeg";
 import visalInterior2 from "../assets/GALPON VISAL 2024/galpon-visal-interior-2.jpeg";
+import visalPlano1 from "../assets/GALPON VISAL 2024/galpon-visal-plano-1.jpeg";
 
 /* ─── PAVIMENTOS ─── */
 import pavimentos1 from "../assets/PAVIMENTOS/pavimentos-1.jpeg";
@@ -275,7 +270,6 @@ import showroomBmw3a3 from "../assets/SHOWROOM BMW 3ER ANILLO/showroom-bmw-3a-3.
 /* ─── SHOWROOM BMW AV LA SALLE ─── */
 import showroomBmwSalle1 from "../assets/SHOWROOM BMW AV LA SALLE/showroom-bmw-salle-1.png";
 import showroomBmwSalle2 from "../assets/SHOWROOM BMW AV LA SALLE/showroom-bmw-salle-2.png";
-import showroomBmwSalle3 from "../assets/SHOWROOM BMW AV LA SALLE/showroom-bmw-salle-3.jpg";
 
 /* ─── SHOWROOM HERO ─── */
 import showroomHero1 from "../assets/SHOWROOM HERO/showroom-hero-1.jpg";
@@ -322,6 +316,7 @@ import oficinasHonda4 from "../assets/OFICINAS HONDA/oficina-honda-4.jpg";
 import galponHondaUsadosFrontal1 from "../assets/GALPON HONDA AUTOS USADOS/galpon-honda-usados-frontal-1.jpg";
 import galponHondaUsadosPlano1 from "../assets/GALPON HONDA AUTOS USADOS/galpon-honda-usados-plano-1.png";
 import galponHondaUsadosPlano2 from "../assets/GALPON HONDA AUTOS USADOS/galpon-honda-usados-plano-2.png";
+import galponHondaUsadosPlano3 from "../assets/GALPON HONDA AUTOS USADOS/galpon-honda-usados-plano-3.jpeg";
 
 /* ─── EDIFICIO RIVER VIEW ─── */
 import riverViewFrontal1 from "../assets/EDIFICIO RIVER VIEW/river-view-frontal-1.jpg";
@@ -346,7 +341,6 @@ import mfcInterior1 from "../assets/VIVIENDA MFC/mfc-interior-1.jpg";
 import mfcInterior2 from "../assets/VIVIENDA MFC/mfc-interior-2.jpg";
 
 /* ─── VIVIENDAS LA FONTANA ─── */
-import viviendasFontana1 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-1.jpg";
 import viviendasFontana2 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-2.png";
 import viviendasFontana3 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-3.png";
 import viviendasFontana4 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-4.png";
@@ -401,7 +395,9 @@ const projects = [
 			ktmInterior3,
 			ktmInterior4,
 			ktmInterior5,
+			ktmPlano3,
 			ktmPlano1,
+			ktmPlano2,
 		],
 		desc: "Showroom de exposición automotriz diseñado para realzar la marca KTM, con iluminación estratégica y circulación fluida.",
 	},
@@ -589,6 +585,8 @@ const projects = [
 			salvatierraInterior16,
 			salvatierraInterior17,
 			salvatierraInterior18,
+			salvatierraPlano1,
+			salvatierraPlano2,
 		],
 		desc: "Residencia elegante que combina diseño contemporáneo con alta funcionalidad, espacios abiertos y acabados de primera calidad.",
 	},
@@ -752,7 +750,7 @@ const projects = [
 			autobol3Interior1,
 			autobol3Interior2,
 			autobol3Plano1,
-			autobol3Plano2,
+			autobol3Plano3,
 		],
 		desc: "Galpón industrial de gran escala para operaciones automotrices de Autobol, con estructura metálica reforzada y amplia superficie útil.",
 	},
@@ -771,9 +769,11 @@ const projects = [
 			autobolCenter1Interior1,
 			autobolCenter2Interior1,
 			autobolCenter2Interior2,
-			autobol4Plano1,
-			autobol4Plano2,
-			autobol4Plano3,
+			// autobol4Plano1,
+			// autobol4Plano2,
+			// autobol4Plano3,
+			autobol4Plano4,
+			autobol4Plano5
 		],
 		desc: "Expansión industrial del complejo Autobol con estructura de alto rendimiento y optimización de flujos operativos.",
 	},
@@ -790,7 +790,7 @@ const projects = [
 			autobol3Interior1,
 			autobolCenter2Interior1,
 			autobolCenter1Plano1,
-			autobolCenter1Plano2,
+			autobolCenter1Plano3,
 		],
 		desc: "Centro industrial automotriz con diseño funcional optimizado para operaciones de recepción y despacho vehicular.",
 	},
@@ -805,6 +805,7 @@ const projects = [
 			autobolCenter2Interior1,
 			autobolCenter2Interior2,
 			autobolCenter2Plano1,
+			autobolCenter2Plano2,
 		],
 		desc: "Segunda fase del complejo industrial Autobol Center, con mayor capacidad de almacenamiento y áreas de servicio ampliadas.",
 	},
@@ -830,6 +831,7 @@ const projects = [
 			galponHondaInterior8,
 			galponHondaInterior9,
 			galponHondaPlano1,
+			galponHondaPlano2,
 		],
 		desc: "Galpón corporativo para operaciones de Honda, con interiores de alta especificación y fachada institucional alineada a la imagen de marca.",
 	},
@@ -858,6 +860,7 @@ const projects = [
 			visalConstruccion8,
 			visalInterior1,
 			visalInterior2,
+			visalPlano1,
 		],
 		desc: "Construcción industrial para Visal 2024 con estándares modernos de calidad, estructura eficiente y acabados duraderos.",
 	},
@@ -947,6 +950,7 @@ const projects = [
 			// galponHondaInterior5,
 			galponHondaUsadosPlano1,
 			galponHondaUsadosPlano2,
+			galponHondaUsadosPlano3,
 		],
 		desc: "Galpón destinado al área de vehículos usados de Honda, con infraestructura planificada para exhibición y gestión eficiente del inventario.",
 	},
