@@ -464,8 +464,8 @@ const projects = [
 	{
 		id: 8,
 		status: "terminado",
-		title: "Restaurante Hacienda Flia P.G.",
-		category: "Comercial",
+		title: "Área social Hacienda Flia P.G.",
+		category: "Residencial",
 		image: restauranteLagunaBrava8,
 		gallery: [
 			restauranteLagunaBrava1,
