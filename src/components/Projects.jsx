@@ -345,6 +345,33 @@ import viviendasFontana2 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-
 import viviendasFontana3 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-3.png";
 import viviendasFontana4 from "../assets/VIVIENDAS LA FONTANA/viviendas-fontana-4.png";
 
+/* ─── GANADERIA SAN JAVIER ─── */
+import ganaderiaSanJavier1 from "../assets/GANADERIA SAN JAVIER/ganaderia-san-javier-1.jpeg";
+import ganaderiaSanJavier2 from "../assets/GANADERIA SAN JAVIER/ganaderia-san-javier-2.jpeg";
+import ganaderiaSanJavier3 from "../assets/GANADERIA SAN JAVIER/ganaderia-san-javier-3.jpeg";
+import ganaderiaSanJavier4 from "../assets/GANADERIA SAN JAVIER/ganaderia-san-javier-4.jpeg";
+import ganaderiaSanJavierPlano1 from "../assets/GANADERIA SAN JAVIER/ganaderia-san-javier-plano-1.jpeg";
+
+/* ─── GANADERIA PUERTO SUAREZ ─── */
+import ganaderiaPuertoSuarez1 from "../assets/GANADERIA PUERTO SUAREZ/ganaderia-puerto-suarez-1.jpeg";
+import ganaderiaPuertoSuarez2 from "../assets/GANADERIA PUERTO SUAREZ/ganaderia-puerto-suarez-2.jpeg";
+import ganaderiaPuertoSuarez3 from "../assets/GANADERIA PUERTO SUAREZ/ganaderia-puerto-suarez-3.jpeg";
+import ganaderiaPuertoSuarez4 from "../assets/GANADERIA PUERTO SUAREZ/ganaderia-puerto-suarez-4.jpeg";
+import ganaderiaPuertoSuarez5 from "../assets/GANADERIA PUERTO SUAREZ/ganaderia-puerto-suarez-5.jpeg";
+import ganaderiaPuertoSuarez6 from "../assets/GANADERIA PUERTO SUAREZ/ganaderia-puerto-suarez-6.jpeg";
+
+/* ─── AUTOBOL SERVICIO TECNICO ─── */
+import autobolServicioTecnico1 from "../assets/AUTOBOL SERVICIO TECNICO/autobol-servicio-tecnico-1.jpeg";
+import autobolServicioTecnico2 from "../assets/AUTOBOL SERVICIO TECNICO/autobol-servicio-tecnico-2.jpeg";
+import autobolServicioTecnico3 from "../assets/AUTOBOL SERVICIO TECNICO/autobol-servicio-tecnico-3.jpeg";
+import autobolServicioTecnico4 from "../assets/AUTOBOL SERVICIO TECNICO/autobol-servicio-tecnico-4.jpeg";
+import autobolServicioTecnico5 from "../assets/AUTOBOL SERVICIO TECNICO/autobol-servicio-tecnico-5.jpeg";
+import autobolServicioTecnico6 from "../assets/AUTOBOL SERVICIO TECNICO/autobol-servicio-tecnico-6.jpeg";
+
+
+
+
+
 /* ─── Categories ─── */
 const CATEGORIES = [
 	"Todos",
@@ -407,7 +434,11 @@ const projects = [
 		title: "Edificio HV",
 		category: "Comercial",
 		image: edificioHV1,
-		gallery: [edificioHV1, edificioHV2, edificioHV3],
+		gallery: [
+			edificioHV1, 
+			edificioHV2, 
+			edificioHV3
+		],
 		desc: "Edificio de uso mixto con fachada contemporánea, optimizado para oficinas y locales comerciales de alto tráfico.",
 	},
 	{
@@ -496,7 +527,11 @@ const projects = [
 		title: "Pastelería Artesanal Macadamia",
 		category: "Comercial",
 		image: macadamia1,
-		gallery: [macadamia1, macadamia2, macadamia3],
+		gallery: [
+			macadamia1, 
+			macadamia2, 
+			macadamia3
+		],
 		desc: "Diseño y equipamiento de pastelería artesanal con énfasis en la experiencia del cliente y la exhibición de productos.",
 	},
 	{
@@ -654,13 +689,32 @@ const projects = [
 		],
 		desc: "Residencia en zona natural con diseño que integra el entorno, amplias galerías y espacios que invitan a la contemplación del paisaje.",
 	},
+		{
+		id: 19,
+		status: "en_desarrollo",
+		title: "Ganaderia San Javier",
+		category: "Ganadería",
+		image: ganaderiaSanJavier1,
+		gallery: [
+			ganaderiaSanJavier1,
+			ganaderiaSanJavier2,
+			ganaderiaSanJavier3,
+			ganaderiaSanJavier4,
+			ganaderiaSanJavierPlano1,
+		],
+		desc: "Instalaciones ganaderas de vanguardia que integran tecnología y bienestar animal, optimizando los procesos operativos del campo.",
+	},
 	{
 		id: 20,
 		status: "en_desarrollo",
 		title: "Edificio River View",
 		category: "Residencial",
 		image: riverViewFrontal1,
-		gallery: [riverViewFrontal1, riverViewFrontal2, riverViewPlano1],
+		gallery: [
+			riverViewFrontal1, 
+			riverViewFrontal2, 
+			riverViewPlano1
+		],
 		desc: "Edificio residencial en desarrollo con vistas privilegiadas, diseño contemporáneo y unidades con acabados de primera.",
 	},
 	{
@@ -683,6 +737,23 @@ const projects = [
 			ciudadJardinPlano1,
 		],
 		desc: "Piscina comunitaria para urbanización Ciudad Jardín, con diseño moderno y proceso de construcción supervisado con altos estándares.",
+	},
+	{
+		id: 22,
+		status: "en_desarrollo",
+		title: "Ganaderia Puerto Suarez",
+		category: "Ganadería",
+		image: ganaderiaPuertoSuarez1,
+		gallery: [
+			ganaderiaPuertoSuarez1,
+			ganaderiaPuertoSuarez2,
+			ganaderiaPuertoSuarez3,
+			ganaderiaPuertoSuarez4,
+			ganaderiaPuertoSuarez5,
+			ganaderiaPuertoSuarez6,
+			
+		],
+		desc: "Complejo ganadero de estilo colonial que fusiona la tradición arquitectónica con las necesidades operativas modernas para el manejo eficiente del ganado.",
 	},
 	{
 		id: 23,
@@ -898,7 +969,12 @@ const projects = [
 		title: "Vivienda M.F.C.",
 		category: "Residencial",
 		image: mfcFrontal1,
-		gallery: [mfcFrontal1, mfcFrontal2, mfcInterior1, mfcInterior2],
+		gallery: [
+			mfcFrontal1, 
+			mfcFrontal2, 
+			mfcInterior1, 
+			mfcInterior2,
+		],
 		desc: "Vivienda residencial con diseño contemporáneo de dos volúmenes, interiores de alto nivel y espacios bien definidos.",
 	},
 	{
@@ -976,6 +1052,22 @@ const projects = [
 		image: showroomHero1,
 		gallery: [showroomHero1, showroomHero2],
 		desc: "Showroom de exposición para la marca Hero, con diseño dinámico e iluminación destacada para la presentación de motocicletas.",
+	},
+	{
+		id: 39,
+		status: "en_desarrollo",
+		title: "Autobol Servicio Técnico",
+		category: "Comercial",
+		image: autobolServicioTecnico1,
+		gallery: [
+			autobolServicioTecnico1, 
+			autobolServicioTecnico2,
+			autobolServicioTecnico3,
+			autobolServicioTecnico4,
+			autobolServicioTecnico5,
+			autobolServicioTecnico6,
+		],
+		desc: "Centro integral de mantenimiento y reparación automotriz, equipado con tecnología de punta y espacios optimizados para brindar la máxima eficiencia.",
 	},
 	
 ];
